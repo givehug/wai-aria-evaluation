@@ -1,13 +1,13 @@
 import React from 'react';
 import { widgets, WidgetName, WidgetNumber } from './types';
 import Card from './Card';
-import styles from './styles.module.css';
+import styles from '../styles/Widgets.module.css';
 
 type Props = {
   libraryName: string;
-} & Partial<Record<WidgetName, React.FunctionComponent>>;
+} & Partial<Record<WidgetName, JSX.Element>>;
 
-const WidgetTemplate = ({ libraryName, ...Widgets }: Props) => {
+const WidgetTemplate = ({ libraryName, ...widgetsElements }: Props) => {
   return (
     <div className={styles.container}>
       <h1>Framework - ReactJS</h1>
@@ -15,7 +15,7 @@ const WidgetTemplate = ({ libraryName, ...Widgets }: Props) => {
       <div className={styles.cards}>
         {(Object.keys(widgets) as WidgetNumber[]).map((widgetNumber) => {
           const widgetName = widgets[widgetNumber];
-          const WidgetComponent = Widgets[widgetName];
+          const widget = widgetsElements[widgetName];
 
           return (
             <Card
@@ -23,7 +23,7 @@ const WidgetTemplate = ({ libraryName, ...Widgets }: Props) => {
               widgetNumber={widgetNumber}
               widgetName={widgetName}
             >
-              {WidgetComponent ? <WidgetComponent /> : '-'}
+              {widget || '-'}
             </Card>
           );
         })}
