@@ -1,6 +1,5 @@
-
-import React from 'react'
-import { ChakraProvider } from '@chakra-ui/react'
+import React from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
 
 import {
   Alert,
@@ -8,7 +7,7 @@ import {
   AlertTitle,
   AlertDescription,
   CloseButton,
-} from "@chakra-ui/react"
+} from '@chakra-ui/react';
 
 import {
   Button,
@@ -18,30 +17,33 @@ import {
   AlertDialogHeader,
   AlertDialogContent,
   AlertDialogOverlay,
-} from "@chakra-ui/react"
+} from '@chakra-ui/react';
 
 function ChakraUI() {
-  const [isOpen, setIsOpen] = React.useState(true)
-  const onClose = () => setIsOpen(false)
-  const cancelRef = React.useRef()
+  const [isOpen, setIsOpen] = React.useState(true);
+  const onClose = () => setIsOpen(false);
+  const cancelRef = React.useRef();
 
-  return (<ChakraProvider>
-    <section>
-      <h3>Alert</h3>
-      <Alert status="error">
-        <AlertIcon />
-        <AlertTitle mr={2}>Your browser is outdated!</AlertTitle>
-        <AlertDescription>Your Chakra experience may be degraded.</AlertDescription>
-        <CloseButton position="absolute" right="8px" top="8px" />
-      </Alert>
-     </section>
+  return (
+    <ChakraProvider>
+      <section>
+        <h3>Alert</h3>
+        <Alert status="error">
+          <AlertIcon />
+          <AlertTitle mr={2}>Your browser is outdated!</AlertTitle>
+          <AlertDescription>
+            Your Chakra experience may be degraded.
+          </AlertDescription>
+          <CloseButton position="absolute" right="8px" top="8px" />
+        </Alert>
+      </section>
 
-     <section>
-      <h3>Alert Dialog</h3>
-      <Button colorScheme="red" onClick={() => setIsOpen(true)}>
-        Delete Customer
-      </Button>
-      <AlertDialog
+      <section>
+        <h3>Alert Dialog</h3>
+        <Button colorScheme="red" onClick={() => setIsOpen(true)}>
+          Delete Customer
+        </Button>
+        <AlertDialog
           isOpen={isOpen}
           leastDestructiveRef={cancelRef as any}
           onClose={onClose}
@@ -67,9 +69,9 @@ function ChakraUI() {
             </AlertDialogContent>
           </AlertDialogOverlay>
         </AlertDialog>
-     </section>
+      </section>
     </ChakraProvider>
-  )
+  );
 }
-  
-export default ChakraUI
+
+export default ChakraUI;
