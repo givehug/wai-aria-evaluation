@@ -1,0 +1,31 @@
+export type WidgetNumber = keyof typeof widgets
+export type WidgetName = typeof widgets[WidgetNumber];
+
+export const widgets =  {
+    '1': 'Accordion',
+    '2': 'Alert',
+    '3': 'AlertDialog',
+    '4': 'Breadcrumbs',
+    '5': 'Button',
+    '6': 'Carousel',
+    '7': 'Checkbox',
+    '8': 'Combobox',
+    '9': 'Dialog',
+    '10': 'Disclosure',
+    '11': 'Feed',
+    '12': 'Link',
+    '13': 'Listbox',
+    '14': 'Menu',
+    '15': 'MenuButton',
+    '16': 'RadioGroup',
+    '17': 'Slider',
+    '18': 'MultiThumbSlider',
+    '19': 'Spinbutton',
+    '20': 'Table',
+    '21': 'Tabs',
+    '22': 'Toolbar',
+    '23': 'Tooltip',
+    '24': 'TreeView',
+    '25': 'TreeGrid',
+    '26': 'WindowSplitter',
+} as const
