@@ -14,7 +14,7 @@ import {
   AlertDialogContent,
   AlertDialogOverlay,
 } from '@chakra-ui/react';
-import WidgetTemplate from '../widgets/Template';
+import WidgetTemplate from '../widgetsTemplate/Template';
 
 function ChakraUI() {
   return (
