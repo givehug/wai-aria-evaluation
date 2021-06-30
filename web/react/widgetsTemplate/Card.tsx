@@ -13,7 +13,7 @@ const Card = (props: Props) => {
       <h4
         className={styles.cardTitle}
       >{`${props.widgetNumber}. ${props.widgetName}`}</h4>
-      <div>{props.children}</div>
+      <div className={styles.cardContent}>{props.children}</div>
     </div>
   );
 };

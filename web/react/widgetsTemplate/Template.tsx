@@ -5,7 +5,7 @@ import styles from '../styles/Widgets.module.css';
 
 type Props = {
   libraryName: string;
-} & Partial<Record<WidgetName, JSX.Element>>;
+} & Record<WidgetName, JSX.Element | undefined>;
 
 const WidgetTemplate = ({ libraryName, ...widgetsElements }: Props) => {
   return (

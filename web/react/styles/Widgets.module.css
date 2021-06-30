@@ -17,8 +17,6 @@
 .card {
   border: 1px solid #a0a0a0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
   min-height: 100px;
   width: 48%;
@@ -34,4 +32,10 @@
   left: 0;
   padding: 5px 10px;
   margin: 0;
+}
+
+.cardContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
