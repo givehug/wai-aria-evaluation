@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -14,22 +15,34 @@ export default function Home() {
 
         <ol>
           <li>
-            <a href="/empty-template">Empty Template</a>
+            <Link href="/empty-template">
+              <a>Empty Template</a>
+            </Link>
           </li>
           <li>
-            <a href="/chakra-ui">Chakra UI</a>
+            <Link href="/chakra-ui">
+              <a>Chakra UI</a>
+            </Link>
           </li>
           <li>
-            <a href="/material-ui">Materials UI</a>
+            <Link href="/material-ui">
+              <a>Materials UI</a>
+            </Link>
           </li>
           <li>
-            <a href="/ant-design">Ant Design</a>
+            <Link href="/ant-design">
+              <a>Ant Design</a>
+            </Link>
           </li>
           <li>
-            <a href="/reakit">Reakit</a>
+            <Link href="/reakit">
+              <a>Reakit</a>
+            </Link>
           </li>
           <li>
-            <a href="/bootstrap">React Bootstrap</a>
+            <Link href="/bootstrap">
+              <a>React Bootstrap</a>
+            </Link>
           </li>
         </ol>
       </main>
