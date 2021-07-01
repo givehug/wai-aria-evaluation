@@ -28,6 +28,9 @@ export default function Home() {
           <li>
             <a href="/reakit">Reakit</a>
           </li>
+          <li>
+            <a href="/bootstrap">React Bootstrap</a>
+          </li>
         </ol>
       </main>
     </div>
