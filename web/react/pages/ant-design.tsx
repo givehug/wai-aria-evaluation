@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import 'antd/dist/antd.css';
+import Head from 'next/head';
+
 import {
   Modal,
   Button,
@@ -21,39 +22,51 @@ import {
   Tooltip,
   Tree,
 } from 'antd';
+
 import WidgetTemplate from '../widgetsTemplate/Template';
+
+// Note:
+// - the bundle size is huge ~500kb
 
 export default function AntDesign() {
   return (
-    <WidgetTemplate
-      libraryName="Ant Design"
-      Accordion={<AccordionWidget />}
-      Alert={<AlertWidget />}
-      AlertDialog={<AlertDialogWidget />}
-      Breadcrumbs={<BreadcrumbsWidget />}
-      Button={<ButtonWidget />}
-      Carousel={<CarouselWidget />}
-      Checkbox={<CheckboxWidget />}
-      Combobox={<ComboboxWidget />}
-      Dialog={<DialogWidget />}
-      Disclosure={<DisclosureWidget />}
-      Feed={undefined}
-      Link={undefined}
-      Listbox={<ListboxWidget />}
-      Menu={<MenuWidget />}
-      MenuButton={<MenuWidget />}
-      RadioGroup={<RadioGroupWidget />}
-      Slider={<SliderWidget />}
-      MultiThumbSlider={<MultiThumbSliderWidget />}
-      Spinbutton={<SpinbuttonWidget />}
-      Table={<TableWidget />}
-      Tabs={<TabsWidget />}
-      Toolbar={undefined}
-      Tooltip={<TooltipWidget />}
-      TreeView={<TreeWidget />}
-      TreeGrid={undefined}
-      WindowSplitter={undefined}
-    />
+    <>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.16.6/antd.compact.min.css"
+        />
+      </Head>
+      <WidgetTemplate
+        libraryName="Ant Design"
+        Accordion={<AccordionWidget />}
+        Alert={<AlertWidget />}
+        AlertDialog={<AlertDialogWidget />}
+        Breadcrumbs={<BreadcrumbsWidget />}
+        Button={<ButtonWidget />}
+        Carousel={<CarouselWidget />}
+        Checkbox={<CheckboxWidget />}
+        Combobox={<ComboboxWidget />}
+        Dialog={<DialogWidget />}
+        Disclosure={<DisclosureWidget />}
+        Feed={undefined}
+        Link={undefined}
+        Listbox={<ListboxWidget />}
+        Menu={<MenuWidget />}
+        MenuButton={<MenuWidget />}
+        RadioGroup={<RadioGroupWidget />}
+        Slider={<SliderWidget />}
+        MultiThumbSlider={<MultiThumbSliderWidget />}
+        Spinbutton={<SpinbuttonWidget />}
+        Table={<TableWidget />}
+        Tabs={<TabsWidget />}
+        Toolbar={undefined}
+        Tooltip={<TooltipWidget />}
+        TreeView={<TreeWidget />}
+        TreeGrid={undefined}
+        WindowSplitter={undefined}
+      />
+    </>
   );
 }
 
