@@ -17,7 +17,7 @@ const buildLibraryPaths = (library, paths) => {
   });
 }
 
-app.get('/', serveStatic('build'))
+app.get('/', serveStatic('.'))
 
 buildLibraryPaths('react', ['material-ui', 'chakra-ui', 'reakit', 'ant-design', 'bootstrap', 'empty-template'])
 buildLibraryPaths('vue', ['material-ui', 'chakra-ui', 'reakit', 'ant-design', 'bootstrap', 'empty-template'])

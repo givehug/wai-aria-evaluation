@@ -1,0 +1,14 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "wai-aria evaluation source code",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd server && npm i && cd ../react && npm i",
+    "cleanup": "cd server && rm -rf build && mkdir build",
+    "build": "npm run cleanup && cd react && npm run build-static && mv out ../server/build/react",
+    "start": "node server/server.js"
+  },
+  "author": "Volodymyr Boretskyi",
+  "license": "ISC"
+}
