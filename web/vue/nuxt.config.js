@@ -16,6 +16,10 @@ export default {
     ]
   },
 
+  router: {
+    base: '/vue'
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],

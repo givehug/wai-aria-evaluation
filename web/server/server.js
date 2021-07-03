@@ -20,7 +20,7 @@ const buildLibraryPaths = (library, paths) => {
 app.get('/', serveStatic('.'))
 
 buildLibraryPaths('react', ['material-ui', 'chakra-ui', 'reakit', 'ant-design', 'bootstrap', 'empty-template', 'semantic-ui'])
-buildLibraryPaths('vue', ['material-ui', 'chakra-ui', 'reakit', 'ant-design', 'bootstrap', 'empty-template'])
+buildLibraryPaths('vue', [''])
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
