@@ -8,7 +8,7 @@
           {{ index + '. ' + widget }}
         </h4>
         <div class="cardContent">
-          <slot :name="widget.toLowerCase()">-</slot>
+          <slot :name="widget.toLowerCase()">not available</slot>
         </div>
       </div>
     </div>

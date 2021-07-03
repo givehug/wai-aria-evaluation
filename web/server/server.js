@@ -20,7 +20,7 @@ const buildLibraryPaths = (library, paths) => {
 app.get('/', serveStatic('.'))
 
 buildLibraryPaths('react', ['material-ui', 'chakra-ui', 'reakit', 'ant-design', 'bootstrap', 'empty-template', 'semantic-ui'])
-buildLibraryPaths('vue', [''])
+buildLibraryPaths('vue', ['']) // vue nuxt-js build does this automatically
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
