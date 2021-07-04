@@ -25,7 +25,7 @@ const buildLibraryPaths = (library, paths) => {
 
 const reactLibs = htmlFromDir('./server/build/react')
   .map((f) => f.replace('.html', ''))
-  .filter((f) => f !== '404');
+  .filter((f) => f !== '404' && f !== 'index');
 
 app.get('/', serveStatic('.'));
 

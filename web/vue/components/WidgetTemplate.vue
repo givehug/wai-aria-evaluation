@@ -5,7 +5,7 @@
     <div class="cards">
       <div class="card" v-for="(widget, index) in widgets" :key="widget">
         <h4 class="cardTitle">
-          {{ index + '. ' + widget }}
+          {{ index + 1 + '. ' + widget }}
         </h4>
         <div class="cardContent">
           <slot :name="widget.toLowerCase()">not available</slot>
