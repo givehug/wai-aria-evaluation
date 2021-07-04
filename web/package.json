@@ -10,6 +10,7 @@
     "build:react": "cd react && npm run build-static && mv out ../server/build/react && cd ../",
     "build:vue": "cd vue && npm run generate && mv dist ../server/build/vue && cd ../",
     "build:angular": "cd angular && npm run build:static && mv dist/static ../server/build/angular && cd ../",
+    "build-exe": "cd server && npx pkg . && cd ../",
     "start": "node server/server.js"
   },
   "author": "Volodymyr Boretskyi",

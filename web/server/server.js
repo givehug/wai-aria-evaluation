@@ -23,7 +23,7 @@ const buildLibraryPaths = (library, paths) => {
   });
 };
 
-const reactLibs = htmlFromDir('./server/build/react')
+const reactLibs = htmlFromDir(path.resolve(__dirname, 'build/react'))
   .map((f) => f.replace('.html', ''))
   .filter((f) => f !== '404' && f !== 'index');
 
@@ -34,5 +34,11 @@ buildLibraryPaths('vue', ['']); // vue nuxt-js build does this automatically
 buildLibraryPaths('angular', ['']); // angular scully build does this automatically
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(
+    `WAI-ARIA evaluation APP started, open http://localhost:${port} in your browser`
+  );
 });
+
+// Note:
+// - pkg bundles static files from ./build into executables, is it possible to only build server script ?
+//    - https://github.com/vercel/pkg/issues/245
