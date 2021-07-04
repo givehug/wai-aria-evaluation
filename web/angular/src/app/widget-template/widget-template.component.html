@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Framework - AngularJS</h1>
+  <h2>Library - {{ library }}</h2>
+  <div class="cards">
+    <div class="card">
+      <h4 class="cardTitle">1. Accordion Widget</h4>
+      <div class="cardContent">
+        <ng-template [ngTemplateOutlet]="accordionWidget.template">
+          not available
+        </ng-template>
+      </div>
+    </div>
+
+    <!-- <div
+      class="card"
+      *ngFor="let widget of widgets; index as index; trackBy: index"
+    >
+      <h4 class="cardTitle">
+        {{ index + '. ' + widget }}
+      </h4>
+      <div class="cardContent">
+        <ng-content [select]="''.'+widget.toLowerCase()"
+          >not available</ng-content
+        >
+      </div>
+    </div> -->
+  </div>
+</div>

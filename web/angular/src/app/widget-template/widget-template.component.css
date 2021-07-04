@@ -1,0 +1,39 @@
+.widget-container {
+  margin: 0 auto;
+  width: '100%';
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 0 1rem;
+  height: 100vh;
+}
+
+.widget-cards {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.widget-card {
+  border: 1px solid #a0a0a0;
+  display: flex;
+  position: relative;
+  min-height: 100px;
+  width: 48%;
+  margin-bottom: 50px;
+  padding: 50px 10px 20px;
+}
+
+.widget-cardTitle {
+  border-right: 1px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.widget-cardContent {
+  flex: 1;
+}
