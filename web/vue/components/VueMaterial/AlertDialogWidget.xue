@@ -1,0 +1,33 @@
+<template>
+  <div>
+    <MdDialogAlert
+      :md-active.sync="first"
+      md-content="Your post has been deleted!"
+      md-confirm-text="Cool!"
+    />
+    <MdButton class="md-accent md-raised" @click="first = true">Alert</MdButton>
+  </div>
+</template>
+
+<script>
+import Vue from 'vue';
+
+// this library doesnt work with standalone components, see github issues
+// - https://github.com/vuematerial/vue-material/issues/1974
+
+import { MdButton, MdDialogAlert } from 'vue-material/dist/components';
+// import MdDialogContent from 'vue-material/dist/components/MdDialog/MdDialogContent';
+// import MdDialogActions from 'vue-material/dist/components/MdDialog/MdDialogActions.vue';
+
+Vue.use(MdButton);
+Vue.use(MdDialogAlert);
+// Vue.use(MdDialogContent);
+// Vue.use(MdDialogActions);
+
+export default {
+  data: () => ({
+    first: false,
+    second: false
+  })
+};
+</script>

@@ -1,0 +1,15 @@
+<template>
+  <div>
+    <MdButton class="md-dense md-primary">Flat</MdButton>
+    <MdButton class="md-dense md-primary" disabled>Disabled</MdButton>
+  </div>
+</template>
+
+<script>
+import Vue from 'vue';
+import { MdButton } from 'vue-material/dist/components';
+
+Vue.use(MdButton);
+
+export default {};
+</script>

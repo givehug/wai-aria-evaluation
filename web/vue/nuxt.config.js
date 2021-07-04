@@ -35,6 +35,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+
+    ['@nuxtjs/vuetify', { treeShake: true }]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
