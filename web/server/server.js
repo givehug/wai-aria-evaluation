@@ -31,6 +31,7 @@ app.get('/', serveStatic('.'));
 
 buildLibraryPaths('react', reactLibs);
 buildLibraryPaths('vue', ['']); // vue nuxt-js build does this automatically
+buildLibraryPaths('angular', ['']); // angular scully build does this automatically
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);

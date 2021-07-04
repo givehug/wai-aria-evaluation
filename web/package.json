@@ -4,11 +4,12 @@
   "description": "wai-aria evaluation source code",
   "main": "index.js",
   "scripts": {
-    "install": "cd server && npm i && cd ../react && npm i && cd ../vue && npm i && cd ../",
+    "install": "cd server && npm i && cd ../react && npm i && cd ../vue && npm i && cd ../angular && npm i && cd ../",
     "cleanup": "cd server && rm -rf build && mkdir build && cd ../",
-    "build": "npm run cleanup && npm run build:react && npm run build:vue",
+    "build": "npm run cleanup && npm run build:react && npm run build:vue && npm run build:angular",
     "build:react": "cd react && npm run build-static && mv out ../server/build/react && cd ../",
     "build:vue": "cd vue && npm run generate && mv dist ../server/build/vue && cd ../",
+    "build:angular": "cd angular && npm run build:static && mv dist/static ../server/build/angular && cd ../",
     "start": "node server/server.js"
   },
   "author": "Volodymyr Boretskyi",
