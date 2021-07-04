@@ -1,27 +1,37 @@
-const express = require('express')
-const path = require('path')
+const express = require('express');
+const path = require('path');
+const fs = require('fs');
 
-const app = express()
-const port = 3000
+const app = express();
+const port = 3000;
 
-const serveStatic = (...p) => express.static(path.join(__dirname, ...p))
+const serveStatic = (...p) => express.static(path.join(__dirname, ...p));
+
+const htmlFromDir = (dir) => {
+  const dirCont = fs.readdirSync(dir);
+  return dirCont.filter((e) => e.endsWith('.html'));
+};
 
 const buildLibraryPaths = (library, paths) => {
-  const libPath = `/${library}/`
-  const libBuildPath = `./build/${library}`
+  const libPath = `/${library}/`;
+  const libBuildPath = `./build/${library}`;
 
-  app.use(libPath, serveStatic(libBuildPath))  
+  app.use(libPath, serveStatic(libBuildPath));
 
-  paths.forEach(p => {
-    app.use(`${libPath}${p}`, serveStatic(libBuildPath, `/${p}.html`))
+  paths.forEach((p) => {
+    app.use(`${libPath}${p}`, serveStatic(libBuildPath, `/${p}.html`));
   });
-}
+};
 
-app.get('/', serveStatic('.'))
+const reactLibs = htmlFromDir('./server/build/react')
+  .map((f) => f.replace('.html', ''))
+  .filter((f) => f !== '404');
 
-buildLibraryPaths('react', ['material-ui', 'chakra-ui', 'reakit', 'ant-design', 'bootstrap', 'empty-template', 'semantic-ui'])
-buildLibraryPaths('vue', ['']) // vue nuxt-js build does this automatically
+app.get('/', serveStatic('.'));
+
+buildLibraryPaths('react', reactLibs);
+buildLibraryPaths('vue', ['']); // vue nuxt-js build does this automatically
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+  console.log(`Example app listening at http://localhost:${port}`);
+});
