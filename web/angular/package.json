@@ -5,9 +5,9 @@
     "ng": "ng",
     "start": "ng serve --base-href=/angular/",
     "build": "ng build --base-href=/angular/",
-    "scully": "npx scully --",
+    "scully": "npx scully --scanRoutes --noPrompt",
     "scully:serve": "npx scully serve --",
-    "build:static": "npm run build && npm run scully --noPrompt"
+    "build:static": "npm run build && npm run scully"
   },
   "private": true,
   "dependencies": {

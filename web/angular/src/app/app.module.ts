@@ -9,7 +9,12 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, WidgetTemplateComponent],
-  imports: [BrowserModule, AppRoutingModule, ScullyLibModule, NoopAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ScullyLibModule,
+    NoopAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
