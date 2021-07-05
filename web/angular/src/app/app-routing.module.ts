@@ -16,6 +16,13 @@ const routes: Routes = [
         (m) => m.NgBootstrapModule
       ),
   },
+  {
+    path: 'empty-template',
+    loadChildren: () =>
+      import('./empty-template/empty-template.module').then(
+        (m) => m.EmptyTemplateModule
+      ),
+  },
 ];
 
 @NgModule({

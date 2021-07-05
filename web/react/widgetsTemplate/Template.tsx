@@ -23,7 +23,7 @@ const WidgetTemplate = ({ libraryName, ...widgetsElements }: Props) => {
               widgetNumber={widgetNumber}
               widgetName={widgetName}
             >
-              {widget || '-'}
+              {widget || 'not available'}
             </Card>
           );
         })}
