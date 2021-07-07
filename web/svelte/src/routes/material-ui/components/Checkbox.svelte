@@ -1,0 +1,11 @@
+<script>
+  import Checkbox from '@smui/checkbox';
+  import FormField from '@smui/form-field';
+
+  let checked = false;
+</script>
+
+<FormField>
+  <Checkbox bind:checked touch />
+  <span slot="label">Remember me.</span>
+</FormField>
