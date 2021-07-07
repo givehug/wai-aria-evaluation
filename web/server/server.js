@@ -30,8 +30,9 @@ const reactLibs = htmlFromDir(path.resolve(__dirname, 'build/react'))
 app.get('/', serveStatic('.'));
 
 buildLibraryPaths('react', reactLibs);
-buildLibraryPaths('vue', ['']); // vue nuxt-js build does this automatically
-buildLibraryPaths('angular', ['']); // angular scully build does this automatically
+buildLibraryPaths('vue', ['']);
+buildLibraryPaths('angular', ['']);
+buildLibraryPaths('svelte', ['']);
 
 app.listen(port, () => {
   console.log(
