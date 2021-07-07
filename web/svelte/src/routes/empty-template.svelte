@@ -1,0 +1,95 @@
+<script>
+  let library = 'Demo';
+  let widgets = [
+    'Accordion',
+    'Alert',
+    'AlertDialog',
+    'Breadcrumbs',
+    'Button',
+    'Carousel',
+    'Checkbox',
+    'Combobox',
+    'Dialog',
+    'Disclosure',
+    'Feed',
+    'Link',
+    'Listbox',
+    'Menu',
+    'MenuButton',
+    'RadioGroup',
+    'Slider',
+    'MultiThumbSlider',
+    'Spinbutton',
+    'Table',
+    'Tabs',
+    'Toolbar',
+    'Tooltip',
+    'TreeView',
+    'TreeGrid',
+    'WindowSplitter',
+  ];
+</script>
+
+<svelte:head>
+  <title>About</title>
+</svelte:head>
+
+<div class="container">
+  <h1>Framework - VueJS</h1>
+  <h2>Library - {library}</h2>
+  <div class="cards">
+    {#each widgets as widget, index}
+      <div class="card">
+        <h4 class="cardTitle">
+          {index + 1 + '. ' + widget}
+        </h4>
+        <div class="cardContent">
+          <!-- <slot :name="widget.toLowerCase()"></slot> -->
+          not available
+        </div>
+      </div>
+    {/each}
+  </div>
+</div>
+
+<style scoped>
+  .container {
+    margin: 0 auto;
+    width: '100%';
+    max-width: 1200px;
+    min-height: 100vh;
+    padding: 0 1rem;
+    height: 100vh;
+  }
+
+  .cards {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    border: 1px solid #a0a0a0;
+    display: flex;
+    position: relative;
+    min-height: 100px;
+    width: 48%;
+    margin-bottom: 50px;
+    padding: 50px 10px 20px;
+  }
+
+  .cardTitle {
+    border-right: 1px solid #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 10px;
+    margin: 0;
+  }
+
+  .cardContent {
+    flex: 1;
+  }
+</style>
