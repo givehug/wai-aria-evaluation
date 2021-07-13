@@ -80,7 +80,7 @@ export default function ChakraUI() {
         Dialog={<DialogWidget />}
         Disclosure={<DisclosureWidget />}
         Feed={undefined}
-        Link={<LinkWidget />}
+        Link={<div>renders native a href element</div>}
         Listbox={<ListboxWidget />}
         Menu={<MenuWidget />}
         MenuButton={<MenuWidget />}
@@ -138,7 +138,6 @@ function SliderWidget() {
       <SliderTrack>
         <SliderFilledTrack />
       </SliderTrack>
-      <SliderThumb />
       <SliderThumb />
     </Slider>
   );
@@ -214,14 +213,6 @@ function MenuWidget() {
   );
 }
 
-function LinkWidget() {
-  return (
-    <Link href="https://chakra-ui.com" isExternal>
-      Chakra Design system
-    </Link>
-  );
-}
-
 function DisclosureWidget() {
   return (
     <Accordion allowToggle>
@@ -269,7 +260,7 @@ function DialogWidget() {
 
 function ListboxWidget() {
   return (
-    <Select placeholder="Select option">
+    <Select placeholder="Select option" title="my select">
       <option value="option1">Option 1</option>
       <option value="option2">Option 2</option>
       <option value="option3">Option 3</option>
