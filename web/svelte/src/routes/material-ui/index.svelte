@@ -58,6 +58,6 @@
 
     <div slot="tooltip"><Tooltip /></div>
 
-    <div slot="treeview">hi</div>
+    <div slot="treeview">not available</div>
   </WidgetTemplate>
 </div>
