@@ -33,16 +33,6 @@
         the users to identify and frees them from memorizing and recalling.
       </div>
     </CollapseItem>
-    <CollapseItem title="Controllability" name="4">
-      <div>
-        Decision making: giving advices about operations is acceptable, but do
-        not make decisions for the users;
-      </div>
-      <div>
-        Controlled consequences: users should be granted the freedom to operate,
-        including canceling, aborting or terminating current operation.
-      </div>
-    </CollapseItem>
   </Collapse>
 </template>
 

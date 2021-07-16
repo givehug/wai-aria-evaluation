@@ -442,8 +442,8 @@ function DisclosureWidget() {
     <Accordion>
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
-        aria-controls="panel1a-content"
-        id="panel1a-header"
+        aria-controls="panel4a-content"
+        id="panel4a-header"
       >
         <Typography>Disclosure</Typography>
       </AccordionSummary>
@@ -458,7 +458,7 @@ function DisclosureWidget() {
 }
 
 function LinkWidget() {
-  return <Link href="#">Link</Link>;
+  return <span>renders native a href element</span>;
 }
 
 function SelectWidget() {
