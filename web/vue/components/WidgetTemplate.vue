@@ -3,7 +3,11 @@
     <h1>Framework - VueJS</h1>
     <h2>Library - {{ library }}</h2>
     <div class="cards">
-      <div class="card" v-for="(widget, index) in widgets" :key="widget">
+      <div
+        :class="['card', `card--${widget}`]"
+        v-for="(widget, index) in widgets"
+        :key="widget"
+      >
         <h4 class="cardTitle">
           {{ index + 1 + '. ' + widget }}
         </h4>

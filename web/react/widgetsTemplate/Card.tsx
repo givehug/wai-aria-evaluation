@@ -9,7 +9,7 @@ type Props = {
 
 const Card = (props: Props) => {
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} card--${props.widgetName}`}>
       <h4
         className={styles.cardTitle}
       >{`${props.widgetNumber}. ${props.widgetName}`}</h4>
