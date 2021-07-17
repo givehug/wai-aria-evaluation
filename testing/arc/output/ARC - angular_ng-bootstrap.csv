@@ -1,0 +1,67 @@
+#,WidgetName,No. of Errors,Test output
+1,Accordion,0,
+2,Alert,0,
+3,AlertDialog,2,"[
+  {
+    ""errorCode"": ""noButtonText"",
+    ""domElement"": ""<button type=\""button\"" aria-describedby=\""modal-title\"" class=\""close\""></button>"",
+    ""errorDescription"": ""Error: no button text"",
+    ""recommendation"": ""Recommend: add text to the button""
+  },
+  {
+    ""errorCode"": ""noModalTitle"",
+    ""domElement"": ""<ngb-modal-window role=\""dialog\"" tabindex=\""-1\"" aria-modal=\""true\"" class=\""d-block modal fade show\""></ngb-modal-window>"",
+    ""errorDescription"": ""Error: the modal does not have a title"",
+    ""recommendation"": ""Recommend: reference the title of the modal with aria-labelledby""
+  }
+]"
+4,Breadcrumbs,null,
+5,Button,0,
+6,Carousel,1,"[
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<ngb-carousel tabindex=\""0\"" class=\""carousel slide\"" aria-activedescendant=\""slide-ngb-slide-2\"" style=\""display: block;\""></ngb-carousel>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  }
+]"
+7,Checkbox,0,
+8,Combobox,2,"[
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<input autocapitalize=\""off\"" autocorrect=\""off\"" role=\""combobox\"" aria-multiline=\""false\"" id=\""typeahead-focus\"" type=\""text\"" class=\""form-control ng-valid open ng-dirty ng-touched\"" ng-reflect-ngb-typeahead=\""(text$) => { const\"" autocomplete=\""off\"" aria-autocomplete=\""list\"" aria-expanded=\""true\"" aria-activedescendant=\""ngb-typeahead-0-0\"" aria-owns=\""ngb-typeahead-0\"" ng-reflect-model=\""al\"">"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  },
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<ngb-typeahead-window role=\""listbox\"" id=\""ngb-typeahead-0\"" class=\""dropdown-menu show\"" style=\""position: absolute; top: 0px; left: 0px; will-change: transform; transform: translate(10px, 88px);\""></ngb-typeahead-window>"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  }
+]"
+9,Dialog,1,"[
+  {
+    ""errorCode"": ""noButtonText"",
+    ""domElement"": ""<button type=\""button\"" class=\""btn btn-outline-secondary calendar\""></button>"",
+    ""errorDescription"": ""Error: no button text"",
+    ""recommendation"": ""Recommend: add text to the button""
+  }
+]"
+10,Disclosure,0,
+11,Feed,null,
+12,Link,null,
+13,Listbox,null,
+14,Menu,null,
+15,MenuButton,null,
+16,RadioGroup,0,
+17,Slider,null,
+18,MultiThumbSlider,null,
+19,Spinbutton,0,
+20,Table,0,
+21,Tabs,0,
+22,Toolbar,null,
+23,Tooltip,0,
+24,TreeView,null,
+25,TreeGrid,null,
+26,WindowSplitter,null,

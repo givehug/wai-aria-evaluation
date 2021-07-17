@@ -1,0 +1,172 @@
+#,WidgetName,Errors,Description
+1,Accordion,2,"[
+    {
+        ""ruleId"": ""nested-interactive"",
+        ""description"": ""Nested interactive controls are not announced by screen readers"",
+        ""help"": ""Ensure interactive controls are not nested"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/nested-interactive?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".mb-1.card:nth-child(1) > .card-header.p-1""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element has focusable descendants"",
+        ""source"": ""<header role=\""tab\"" class=\""card-header p-1\""><button type=\""button\"" class=\""btn btn-info btn-block collapsed\"" aria-expanded=\""false\"" aria-controls=\""accordion-1\"" style=\""overflow-anchor: none;\"">Accordion 1</button></header>"",
+        ""tags"": [
+            ""cat.keyboard"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:15:06.886Z"",
+        ""testUrl"": ""http://localhost:3000/vue/bootstrap"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""nested-interactive"",
+        ""description"": ""Nested interactive controls are not announced by screen readers"",
+        ""help"": ""Ensure interactive controls are not nested"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/nested-interactive?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".mb-1.card:nth-child(2) > .card-header.p-1""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element has focusable descendants"",
+        ""source"": ""<header role=\""tab\"" class=\""card-header p-1\""><button type=\""button\"" class=\""btn btn-info btn-block not-collapsed\"" aria-expanded=\""true\"" aria-controls=\""accordion-2\"" style=\""overflow-anchor: none;\"">Accordion 2</button></header>"",
+        ""tags"": [
+            ""cat.keyboard"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:15:06.886Z"",
+        ""testUrl"": ""http://localhost:3000/vue/bootstrap"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""nested-interactive"",
+        ""description"": ""Nested interactive controls are not announced by screen readers"",
+        ""help"": ""Ensure interactive controls are not nested"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/nested-interactive?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".mb-1.card:nth-child(3) > .card-header.p-1""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element has focusable descendants"",
+        ""source"": ""<header role=\""tab\"" class=\""card-header p-1\""><button type=\""button\"" class=\""btn btn-info btn-block collapsed\"" aria-expanded=\""false\"" aria-controls=\""accordion-3\"" style=\""overflow-anchor: none;\"">Accordion 3</button></header>"",
+        ""tags"": [
+            ""cat.keyboard"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:15:06.886Z"",
+        ""testUrl"": ""http://localhost:3000/vue/bootstrap"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+2,Alert,0,
+3,AlertDialog,2,"[
+    {
+        ""ruleId"": ""focus-modal-none"",
+        ""description"": ""When the modal is activated, focus is not placed on the modal."",
+        ""help"": ""Focus is not placed on opened modal"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/focus-modal-none"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.modal-open > div#modal-1___BV_modal_outer_:nth-of-type(2)""
+        ],
+        ""summary"": ""When the modal is activated, focus is not placed on the modal."",
+        ""source"": ""<div id=\""modal-1___BV_modal_outer_\"" style=\""position: absolute; z-index: 1040;\"">"",
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""vue/bootstrap/dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:17:57.179Z"",
+        ""testUrl"": ""http://localhost:3000/vue/bootstrap"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""reading-order-browse-outside-modal"",
+        ""description"": ""Screen readers can read content outside the modal dialog."",
+        ""help"": ""Able to browse outside modal with screen reader"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/reading-order-browse-outside-modal"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.modal-open > div#modal-1___BV_modal_outer_:nth-of-type(2)""
+        ],
+        ""summary"": ""Screen readers can read content outside the modal dialog."",
+        ""source"": ""<div id=\""modal-1___BV_modal_outer_\"" style=\""position: absolute; z-index: 1040;\"">"",
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""vue/bootstrap/dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:17:57.187Z"",
+        ""testUrl"": ""http://localhost:3000/vue/bootstrap"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+4,Breadcrumbs,0,
+5,Button,0,
+6,Carousel,1,"[
+    {
+        ""ruleId"": ""list"",
+        ""description"": ""Ensures that lists are structured correctly"",
+        ""help"": ""<ul> and <ol> must only directly contain <li>, <script> or <template> elements"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/list?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            ""#carousel-1___BV_indicators_""
+        ],
+        ""summary"": ""Fix all of the following:\n  List element has direct children with a role that is not allowed: button"",
+        ""source"": ""<ol id=\""carousel-1___BV_indicators_\"" aria-hidden=\""false\"" aria-label=\""Select a slide to display\"" aria-owns=\""carousel-1___BV_inner_\"" class=\""carousel-indicators\"">"",
+        ""tags"": [
+            ""cat.structure"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:18:57.361Z"",
+        ""testUrl"": ""http://localhost:3000/vue/bootstrap"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+7,Checkbox,0,
+8,Combobox,null,
+9,Dialog,0,
+10,Disclosure,0,
+11,Feed,null,
+12,Link,null,
+13,Listbox,0,
+14,Menu,0,
+15,MenuButton,0,
+16,RadioGroup,0,
+17,Slider,null,
+18,MultiThumbSlider,null,
+19,Spinbutton,0,
+20,Table,0,
+21,Tabs,0,
+22,Toolbar,0,
+23,Tooltip,0,
+24,TreeView,null,
+25,TreeGrid,null,
+26,WindowSplitter,null,
+,,,
+,Total Issues,5,
+,,,
+,Notes: ,,

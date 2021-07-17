@@ -1,0 +1,48 @@
+#,WidgetName,No. of Errors,Test output
+1,Accordion,0,
+2,Alert,0,
+3,AlertDialog,0,
+4,Breadcrumbs,0,
+5,Button,1,"[
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<button type=\""button\"" tabindex=\""0\"" disabled=\""\"" class=\""bx--btn bx--btn--primary bx--btn--disabled\""> Disabled button</button>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  }
+]"
+6,Carousel,null,
+7,Checkbox,0,
+8,Combobox,1,"[
+  {
+    ""errorCode"": ""duplicateLabelsUsed"",
+    ""domElement"": ""N/A"",
+    ""errorDescription"": ""Error: some labels use the same text label"",
+    ""recommendation"": ""Recommend: make each label text unique""
+  }
+]"
+9,Dialog,0,
+10,Disclosure,0,
+11,Feed,null,
+12,Link,null,
+13,Listbox,0,
+14,Menu,0,
+15,MenuButton,0,
+16,RadioGroup,0,
+17,Slider,0,
+18,MultiThumbSlider,null,
+19,Spinbutton,null,
+20,Table,0,
+21,Tabs,0,
+22,Toolbar,null,
+23,Tooltip,1,"[
+  {
+    ""errorCode"": ""noButtonText"",
+    ""domElement"": ""<div role=\""button\"" aria-haspopup=\""true\"" class=\""bx--tooltip__trigger\"" aria-expanded=\""false\"" aria-describedby=\""ccs-0.6zovfbiqo4g\"" tabindex=\""0\""></div>"",
+    ""errorDescription"": ""Error: no button text"",
+    ""recommendation"": ""Recommend: add text to the button""
+  }
+]"
+24,TreeView,0,
+25,TreeGrid,null,
+26,WindowSplitter,null,

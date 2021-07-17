@@ -1,0 +1,65 @@
+#,WidgetName,No. of Errors,Test output
+1,Accordion,0,
+2,Alert,0,
+3,AlertDialog,3,"[
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<span tabindex=\""0\""></span>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  },
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<span tabindex=\""0\""></span>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  },
+  {
+    ""errorCode"": ""visibleModalSiblings"",
+    ""domElement"": ""<div id=\""modal-1\"" role=\""dialog\"" aria-labelledby=\""modal-1___BV_modal_title_\"" aria-describedby=\""modal-1___BV_modal_body_\"" class=\""modal fade show\"" aria-modal=\""true\"" style=\""display: block;\""></div>"",
+    ""errorDescription"": ""Error: content behind the modal can be read by screen readers"",
+    ""recommendation"": ""Recommend: add aria-hidden='true' to the contents behind the modal""
+  }
+]"
+4,Breadcrumbs,0,
+5,Button,0,
+6,Carousel,0,
+7,Checkbox,0,
+8,Combobox,null,
+9,Dialog,3,"[
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<span tabindex=\""0\""></span>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  },
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<span tabindex=\""0\""></span>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  },
+  {
+    ""errorCode"": ""visibleModalSiblings"",
+    ""domElement"": ""<div id=\""modal-1\"" role=\""dialog\"" aria-labelledby=\""modal-1___BV_modal_title_\"" aria-describedby=\""modal-1___BV_modal_body_\"" class=\""modal fade show\"" aria-modal=\""true\"" style=\""display: block;\""></div>"",
+    ""errorDescription"": ""Error: content behind the modal can be read by screen readers"",
+    ""recommendation"": ""Recommend: add aria-hidden='true' to the contents behind the modal""
+  }
+]"
+10,Disclosure,0,
+11,Feed,null,
+12,Link,null,
+13,Listbox,0,
+14,Menu,0,
+15,MenuButton,0,
+16,RadioGroup,0,
+17,Slider,null,
+18,MultiThumbSlider,null,
+19,Spinbutton,0,
+20,Table,0,
+21,Tabs,0,
+22,Toolbar,0,
+23,Tooltip,0,
+24,TreeView,null,
+25,TreeGrid,null,
+26,WindowSplitter,null,

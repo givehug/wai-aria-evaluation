@@ -1,0 +1,67 @@
+#,WidgetName,No. of Errors,Test output
+1,Accordion,0,
+2,Alert,0,
+3,AlertDialog,0,
+4,Breadcrumbs,0,
+5,Button,0,
+6,Carousel,null,
+7,Checkbox,1,"[
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<input type=\""checkbox\"" class=\""hidden\"" readonly=\""\"" tabindex=\""0\"" value=\""\"">"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  }
+]"
+8,Combobox,1,"[
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<input type=\""text\"" autocomplete=\""off\"" value=\""a\"" tabindex=\""0\"" class=\""prompt\"">"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  }
+]"
+9,Dialog,0,
+10,Disclosure,0,
+11,Feed,null,
+12,Link,null,
+13,Listbox,2,"[
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<div role=\""listbox\"" aria-expanded=\""true\"" class=\""ui active visible selection dropdown\"" tabindex=\""0\""></div>"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  },
+  {
+    ""errorCode"": ""ariaExpandedOnInvalidRole"",
+    ""domElement"": ""active visible selection dropdown\"" tabindex=\""0\""></div>"",
+    ""errorDescription"": ""Error: aria-expanded is on an element where it will not be conveyed to screen reader users"",
+    ""recommendation"": ""Recommend: aria-expanded should be placed on the element which controls the visibility of another element""
+  }
+]"
+14,Menu,0,
+15,MenuButton,0,
+16,RadioGroup,2,"[
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<input type=\""radio\"" class=\""hidden\"" name=\""radioGroup\"" readonly=\""\"" tabindex=\""0\"" value=\""this\"">"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  },
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<input type=\""radio\"" class=\""hidden\"" name=\""radioGroup\"" readonly=\""\"" tabindex=\""0\"" value=\""that\"">"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  }
+]"
+17,Slider,null,
+18,MultiThumbSlider,null,
+19,Spinbutton,null,
+20,Table,0,
+21,Tabs,0,
+22,Toolbar,null,
+23,Tooltip,0,
+24,TreeView,null,
+25,TreeGrid,null,
+26,WindowSplitter,null,

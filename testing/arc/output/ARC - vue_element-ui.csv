@@ -1,0 +1,163 @@
+#,WidgetName,No. of Errors,Test output
+1,Accordion,1,"[
+  {
+    ""errorCode"": ""ariaExpandedOnInvalidRole"",
+    ""domElement"": ""<div role=\""tab\"" aria-expanded=\""true\"" aria-controls=\""el-collapse-content-4083\"" aria-describedby=\""el-collapse-content-4083\""></div>"",
+    ""errorDescription"": ""Error: aria-expanded is on an element where it will not be conveyed to screen reader users"",
+    ""recommendation"": ""Recommend: aria-expanded should be placed on the element which controls the visibility of another element""
+  }
+]"
+2,Alert,0,
+3,AlertDialog,1,"[
+  {
+    ""errorCode"": ""visibleModalSiblings"",
+    ""domElement"": ""<div tabindex=\""-1\"" role=\""dialog\"" aria-modal=\""true\"" aria-label=\""dialog\"" class=\""el-message-box__wrapper\"" style=\""z-index: 2001;\""></div>"",
+    ""errorDescription"": ""Error: content behind the modal can be read by screen readers"",
+    ""recommendation"": ""Recommend: add aria-hidden='true' to the contents behind the modal""
+  }
+]"
+4,Breadcrumbs,0,
+5,Button,0,
+6,Carousel,6,"[
+  {
+    ""errorCode"": ""noButtonText"",
+    ""domElement"": ""<button type=\""button\"" class=\""el-carousel__arrow el-carousel__arrow--left\""></button>"",
+    ""errorDescription"": ""Error: no button text"",
+    ""recommendation"": ""Recommend: add text to the button""
+  },
+  {
+    ""errorCode"": ""noButtonText"",
+    ""domElement"": ""<button type=\""button\"" class=\""el-carousel__arrow el-carousel__arrow--right\""></button>"",
+    ""errorDescription"": ""Error: no button text"",
+    ""recommendation"": ""Recommend: add text to the button""
+  },
+  {
+    ""errorCode"": ""noButtonText"",
+    ""domElement"": ""<button class=\""el-carousel__button\""></button>"",
+    ""errorDescription"": ""Error: no button text"",
+    ""recommendation"": ""Recommend: add text to the button""
+  },
+  {
+    ""errorCode"": ""noButtonText"",
+    ""domElement"": ""<button class=\""el-carousel__button\""></button>"",
+    ""errorDescription"": ""Error: no button text"",
+    ""recommendation"": ""Recommend: add text to the button""
+  },
+  {
+    ""errorCode"": ""noButtonText"",
+    ""domElement"": ""<button class=\""el-carousel__button\""></button>"",
+    ""errorDescription"": ""Error: no button text"",
+    ""recommendation"": ""Recommend: add text to the button""
+  },
+  {
+    ""errorCode"": ""noButtonText"",
+    ""domElement"": ""<button class=\""el-carousel__button\""></button>"",
+    ""errorDescription"": ""Error: no button text"",
+    ""recommendation"": ""Recommend: add text to the button""
+  }
+]"
+7,Checkbox,0,
+8,Combobox,2,"[
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<div aria-haspopup=\""listbox\"" role=\""combobox\"" aria-owns=\""el-autocomplete-9381\"" class=\""el-autocomplete inline-input\"" data-v-6d95dc0e=\""\"" aria-expanded=\""true\""></div>"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  },
+  {
+    ""errorCode"": ""placeholderUsedForLabel"",
+    ""domElement"": ""<input type=\""text\"" autocomplete=\""off\"" valuekey=\""value\"" placeholder=\""Please Input\"" fetchsuggestions=\""function () { [native code] }\"" triggeronfocus=\""true\"" debounce=\""300\"" placement=\""bottom-start\"" popperappendtobody=\""true\"" class=\""el-input__inner\"" role=\""textbox\"" aria-autocomplete=\""list\"" aria-controls=\""id\"" aria-activedescendant=\""el-autocomplete-9381-item--1\"">"",
+    ""errorDescription"": ""Error: placeholder used for label"",
+    ""recommendation"": ""Recommend: use a labelling technique other than placeholder text""
+  }
+]"
+9,Dialog,0,
+10,Disclosure,1,"[
+  {
+    ""errorCode"": ""ariaExpandedOnInvalidRole"",
+    ""domElement"": ""<div role=\""tab\"" aria-controls=\""el-collapse-content-5524\"" aria-describedby=\""el-collapse-content-5524\"" aria-expanded=\""true\""></div>"",
+    ""errorDescription"": ""Error: aria-expanded is on an element where it will not be conveyed to screen reader users"",
+    ""recommendation"": ""Recommend: aria-expanded should be placed on the element which controls the visibility of another element""
+  }
+]"
+11,Feed,0,
+12,Link,null,
+13,Listbox,1,"[
+  {
+    ""errorCode"": ""placeholderUsedForLabel"",
+    ""domElement"": ""<input type=\""text\"" readonly=\""readonly\"" autocomplete=\""off\"" placeholder=\""Select\"" class=\""el-input__inner\"">"",
+    ""errorDescription"": ""Error: placeholder used for label"",
+    ""recommendation"": ""Recommend: use a labelling technique other than placeholder text""
+  }
+]"
+14,Menu,0,
+15,MenuButton,0,
+16,RadioGroup,0,
+17,Slider,2,"[
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<div tabindex=\""0\"" class=\""el-slider__button-wrapper\"" style=\""left:0%;\""></div>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  },
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<div class=\""el-tooltip el-slider__button\"" aria-describedby=\""el-tooltip-4443\"" tabindex=\""0\""></div>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  }
+]"
+18,MultiThumbSlider,4,"[
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<div tabindex=\""0\"" class=\""el-slider__button-wrapper\"" style=\""left: 40%;\""></div>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  },
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<div class=\""el-tooltip el-slider__button\"" aria-describedby=\""el-tooltip-2583\"" tabindex=\""0\""></div>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  },
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<div tabindex=\""0\"" class=\""el-slider__button-wrapper\"" style=\""left: 80%;\""></div>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  },
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<div class=\""el-tooltip el-slider__button\"" aria-describedby=\""el-tooltip-5986\"" tabindex=\""0\""></div>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  }
+]"
+19,Spinbutton,1,"[
+  {
+    ""errorCode"": ""placeholderUsedForLabel"",
+    ""domElement"": ""<input type=\""text\"" autocomplete=\""off\"" name=\""\"" placeholder=\""Arbitrary time\"" class=\""el-input__inner\"">"",
+    ""errorDescription"": ""Error: placeholder used for label"",
+    ""recommendation"": ""Recommend: use a labelling technique other than placeholder text""
+  }
+]"
+20,Table,0,
+21,Tabs,0,
+22,Toolbar,null,
+23,Tooltip,0,
+24,TreeView,2,"[
+  {
+    ""errorCode"": ""ariaExpandedOnInvalidRole"",
+    ""domElement"": ""<div role=\""group\"" class=\""el-tree-node__children\"" aria-expanded=\""true\"" data-old-padding-top=\""\"" data-old-padding-bottom=\""\"" data-old-overflow=\""\"" style=\""\""></div>"",
+    ""errorDescription"": ""Error: aria-expanded is on an element where it will not be conveyed to screen reader users"",
+    ""recommendation"": ""Recommend: aria-expanded should be placed on the element which controls the visibility of another element""
+  },
+  {
+    ""errorCode"": ""ariaExpandedOnInvalidRole"",
+    ""domElement"": ""<div role=\""group\"" class=\""el-tree-node__children\"" aria-expanded=\""true\"" data-old-padding-top=\""\"" data-old-padding-bottom=\""\"" data-old-overflow=\""\"" style=\""\""></div>"",
+    ""errorDescription"": ""Error: aria-expanded is on an element where it will not be conveyed to screen reader users"",
+    ""recommendation"": ""Recommend: aria-expanded should be placed on the element which controls the visibility of another element""
+  }
+]"
+25,TreeGrid,null,
+26,WindowSplitter,null,

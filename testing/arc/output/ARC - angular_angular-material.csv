@@ -1,0 +1,53 @@
+#,WidgetName,No. of Errors,Test output
+1,Accordion,0,
+2,Alert,null,
+3,AlertDialog,0,
+4,Breadcrumbs,null,
+5,Button,0,
+6,Carousel,null,
+7,Checkbox,0,
+8,Combobox,0,
+9,Dialog,0,
+10,Disclosure,0,
+11,Feed,null,
+12,Link,null,
+13,Listbox,0,
+14,Menu,null,
+15,MenuButton,null,
+16,RadioGroup,0,
+17,Slider,1,"[
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<mat-slider role=\""slider\"" min=\""1\"" max=\""100\"" step=\""1\"" value=\""1\"" class=\""mat-slider mat-focus-indicator mat-accent mat-slider-horizontal mat-slider-min-value _mat-animation-noopable\"" ng-reflect-min=\""1\"" ng-reflect-max=\""100\"" ng-reflect-step=\""1\"" ng-reflect-value=\""1\"" tabindex=\""0\"" aria-disabled=\""false\"" aria-valuemax=\""100\"" aria-valuemin=\""1\"" aria-valuenow=\""1\"" aria-valuetext=\""1\"" aria-orientation=\""horizontal\""></mat-slider>"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  }
+]"
+18,MultiThumbSlider,null,
+19,Spinbutton,null,
+20,Table,0,
+21,Tabs,0,
+22,Toolbar,0,
+23,Tooltip,0,
+24,TreeView,3,"[
+  {
+    ""errorCode"": ""noButtonText"",
+    ""domElement"": ""<button mat-icon-button=\""\"" disabled=\""true\"" class=\""mat-focus-indicator mat-icon-button mat-button-base _mat-animation-noopable mat-button-disabled\"" ng-reflect-disabled=\""\""></button>"",
+    ""errorDescription"": ""Error: no button text"",
+    ""recommendation"": ""Recommend: add text to the button""
+  },
+  {
+    ""errorCode"": ""noButtonText"",
+    ""domElement"": ""<button mat-icon-button=\""\"" disabled=\""true\"" class=\""mat-focus-indicator mat-icon-button mat-button-base _mat-animation-noopable mat-button-disabled\"" ng-reflect-disabled=\""\""></button>"",
+    ""errorDescription"": ""Error: no button text"",
+    ""recommendation"": ""Recommend: add text to the button""
+  },
+  {
+    ""errorCode"": ""noButtonText"",
+    ""domElement"": ""<button mat-icon-button=\""\"" disabled=\""true\"" class=\""mat-focus-indicator mat-icon-button mat-button-base _mat-animation-noopable mat-button-disabled\"" ng-reflect-disabled=\""\""></button>"",
+    ""errorDescription"": ""Error: no button text"",
+    ""recommendation"": ""Recommend: add text to the button""
+  }
+]"
+25,TreeGrid,null,
+26,WindowSplitter,null,
