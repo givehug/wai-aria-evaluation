@@ -100,26 +100,7 @@
   }
 ]"
 19,Spinbutton,0,
-20,Table,3,"[
-  {
-    ""errorCode"": ""noButtonText"",
-    ""domElement"": ""<button class=\""ant-pagination-item-link\"" type=\""button\"" tabindex=\""-1\"" disabled=\""\""></button>"",
-    ""errorDescription"": ""Error: no button text"",
-    ""recommendation"": ""Recommend: add text to the button""
-  },
-  {
-    ""errorCode"": ""noButtonText"",
-    ""domElement"": ""<button class=\""ant-pagination-item-link\"" type=\""button\"" tabindex=\""-1\"" disabled=\""\""></button>"",
-    ""errorDescription"": ""Error: no button text"",
-    ""recommendation"": ""Recommend: add text to the button""
-  },
-  {
-    ""errorCode"": ""nonActiveElementInTabOrder"",
-    ""domElement"": ""ERR<li title=\""1\"" class=\""ant-pagination-item ant-pagination-item-1 ant-pagination-item-active\"" tabindex=\""0\""></li>"",
-    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
-    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
-  }
-]"
+20,Table,null,
 21,Tabs,0,
 22,Toolbar,null,
 23,Tooltip,0,

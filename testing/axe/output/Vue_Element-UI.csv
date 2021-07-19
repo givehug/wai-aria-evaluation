@@ -759,33 +759,7 @@
     }
 ]"
 19,Spinbutton,0,
-20,Table,1,"[
-    {
-        ""ruleId"": ""th-has-data-cells"",
-        ""description"": ""Ensure that each table header in a data table refers to data cells"",
-        ""help"": ""All th elements and elements with role=columnheader/rowheader must have data cells they describe"",
-        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/th-has-data-cells?application=AxeChrome"",
-        ""needsReview"": true,
-        ""isManual"": false,
-        ""selector"": [
-            "".el-table__header""
-        ],
-        ""summary"": ""Fix all of the following:\n  Table data cells are missing or empty"",
-        ""source"": ""<table cellspacing=\""0\"" cellpadding=\""0\"" border=\""0\"" class=\""el-table__header\"" style=\""width: 528px;\"">"",
-        ""tags"": [
-            ""cat.tables"",
-            ""wcag2a"",
-            ""wcag131"",
-            ""section508"",
-            ""section508.22.g""
-        ],
-        ""igt"": """",
-        ""shareURL"": """",
-        ""createdAt"": ""2021-07-16T19:34:54.054Z"",
-        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
-        ""foundBy"": ""vboretskyi@gmail.com""
-    }
-]"
+20,Table,null,
 21,Tabs,0,
 22,Toolbar,null,
 23,Tooltip,0,

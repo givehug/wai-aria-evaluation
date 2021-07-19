@@ -20,7 +20,7 @@
         elements of the page.
       </div>
     </CollapseItem>
-    <CollapseItem title="Efficiency" name="3">
+    <CollapseItem title="Efficiency" name="3" disabled>
       <div>
         Simplify the process: keep operating process simple and intuitive;
       </div>

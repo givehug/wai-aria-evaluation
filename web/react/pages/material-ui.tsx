@@ -123,6 +123,7 @@ function AccordionWidget() {
       </Accordion>
       <Accordion>
         <AccordionSummary
+          disabled
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3a-content"
           id="panel3a-header"
@@ -211,7 +212,7 @@ function BreadcrumbsWidget() {
 function ButtonWidget() {
   return (
     <>
-      <Button variant="contained" color="primary">
+      <Button variant="contained" color="primary" onClick={console.log}>
         Button
       </Button>
       <Button variant="contained" disabled>

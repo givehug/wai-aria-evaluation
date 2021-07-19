@@ -224,26 +224,7 @@
     ""recommendation"": ""Recommend: Remove aria-label attribute, and use visually hidden text instead""
   }
 ]"
-20,Table,3,"[
-  {
-    ""errorCode"": ""nonActiveElementInTabOrder"",
-    ""domElement"": ""<li title=\""1\"" tabindex=\""0\"" class=\""ant-pagination-item ant-pagination-item-1 ant-pagination-item-active\""></li>"",
-    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
-    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
-  },
-  {
-    ""errorCode"": ""ariaLabelOnNonInteractiveElement"",
-    ""domElement"": ""<i aria-label=\""icon: left\"" class=\""anticon anticon-left\""></i>"",
-    ""errorDescription"": ""Error: aria-label is used on an element which does not allow this attribute"",
-    ""recommendation"": ""Recommend: Remove aria-label attribute, and use visually hidden text instead""
-  },
-  {
-    ""errorCode"": ""ariaLabelOnNonInteractiveElement"",
-    ""domElement"": ""<i aria-label=\""icon: right\"" class=\""anticon anticon-right\""></i>"",
-    ""errorDescription"": ""Error: aria-label is used on an element which does not allow this attribute"",
-    ""recommendation"": ""Recommend: Remove aria-label attribute, and use visually hidden text instead""
-  }
-]"
+20,Table,null
 21,Tabs,2,"[
   {
     ""errorCode"": ""ariaLabelOnNonInteractiveElement"",

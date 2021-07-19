@@ -394,7 +394,7 @@
 ]"
 18,MultiThumbSlider,null,
 19,Spinbutton,null,
-20,Table,0,
+20,Table,null,
 21,Tabs,4,"[
     {
         ""ruleId"": ""aria-required-children"",

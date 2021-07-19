@@ -82,7 +82,11 @@ function AccordionWidget() {
       <Collapse.Panel header="This is panel header 2" key="2">
         <p>Panel 2</p>
       </Collapse.Panel>
-      <Collapse.Panel header="This is panel header 3" key="3">
+      <Collapse.Panel
+        header="This is panel header 3"
+        key="3"
+        collapsible="disabled"
+      >
         <p>Panel 3</p>
       </Collapse.Panel>
     </Collapse>

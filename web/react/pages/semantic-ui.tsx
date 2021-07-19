@@ -198,7 +198,7 @@ const BreadcrumbsWidget = () => (
 
 const ButtonWidget = () => (
   <>
-    <Button>Button</Button>
+    <Button onClick={console.log}>Button</Button>
     <Button disabled>Disabled</Button>
   </>
 );

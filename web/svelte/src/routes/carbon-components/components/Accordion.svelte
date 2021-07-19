@@ -17,7 +17,7 @@
       emotion, relations, sentiment and more.
     </p>
   </AccordionItem>
-  <AccordionItem title="Language Translator">
+  <AccordionItem title="Language Translator" disabled>
     <p>
       Translate text, documents, and websites from one language to another.
       Create industry or region-specific translations via the service's

@@ -81,7 +81,7 @@ export default function ChakraUI() {
         Disclosure={<DisclosureWidget />}
         Feed={undefined}
         Link={<div>renders native a href element</div>}
-        Listbox={<ListboxWidget />}
+        Listbox={<div>renders native select element</div>}
         Menu={<MenuWidget />}
         MenuButton={<MenuWidget />}
         RadioGroup={<RadioGroupWidget />}
@@ -197,19 +197,29 @@ function RadioGroupWidget() {
 
 function MenuWidget() {
   return (
-    <Menu>
-      {({ isOpen }) => (
-        <>
-          <MenuButton isActive={isOpen} as={Button}>
-            {isOpen ? 'Close' : 'Open'}
+    <>
+      <Menu>
+        {({ isOpen }) => (
+          <>
+            <MenuButton isActive={isOpen} as={Button}>
+              {isOpen ? 'Close' : 'Open'}
+            </MenuButton>
+            <MenuList>
+              <MenuItem onClick={() => alert('Item 1')}>Item 1</MenuItem>
+              <MenuItem onClick={() => alert('Item 2')}>Item 2</MenuItem>
+            </MenuList>
+          </>
+        )}
+      </Menu>
+      <br />
+      <Menu>
+        {({ isOpen }) => (
+          <MenuButton as={Button} disabled>
+            Disabled
           </MenuButton>
-          <MenuList>
-            <MenuItem onClick={() => alert('Item 1')}>Item 1</MenuItem>
-            <MenuItem onClick={() => alert('Item 2')}>Item 2</MenuItem>
-          </MenuList>
-        </>
-      )}
-    </Menu>
+        )}
+      </Menu>
+    </>
   );
 }
 
@@ -258,16 +268,6 @@ function DialogWidget() {
   );
 }
 
-function ListboxWidget() {
-  return (
-    <Select placeholder="Select option" title="my select">
-      <option value="option1">Option 1</option>
-      <option value="option2">Option 2</option>
-      <option value="option3">Option 3</option>
-    </Select>
-  );
-}
-
 function CheckboxWidget() {
   return (
     <CheckboxGroup colorScheme="green" defaultValue={['naruto', 'kakashi']}>
@@ -310,6 +310,20 @@ function AccordionWidget() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         </AccordionPanel>
       </AccordionItem>
+
+      <AccordionItem isDisabled>
+        <h2>
+          <AccordionButton>
+            <Box flex="1" textAlign="left">
+              Section 3 title
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+        </h2>
+        <AccordionPanel pb={4}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </AccordionPanel>
+      </AccordionItem>
     </Accordion>
   );
 }
@@ -335,7 +349,9 @@ function BreadcrumbsWidget() {
 function ButtonWidget() {
   return (
     <ButtonGroup variant="outline" spacing="6">
-      <Button colorScheme="blue">Save</Button>
+      <Button colorScheme="blue" onClick={console.log}>
+        Save
+      </Button>
       <Button isDisabled>Cancel</Button>
     </ButtonGroup>
   );

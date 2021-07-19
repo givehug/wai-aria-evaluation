@@ -609,54 +609,7 @@
         ""foundBy"": ""vboretskyi@gmail.com""
     }
 ]"
-20,Table,2,"[
-    {
-        ""ruleId"": ""aria-allowed-attr"",
-        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
-        ""help"": ""Elements must only use allowed ARIA attributes"",
-        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=AxeChrome"",
-        ""impact"": ""serious"",
-        ""isManual"": false,
-        ""selector"": [
-            "".ant-pagination-item-link > .anticon-left.anticon[aria-label=\""icon\\:\\ left\""]""
-        ],
-        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
-        ""source"": ""<i aria-label=\""icon: left\"" class=\""anticon anticon-left\"">"",
-        ""tags"": [
-            ""cat.aria"",
-            ""wcag2a"",
-            ""wcag412""
-        ],
-        ""igt"": """",
-        ""shareURL"": """",
-        ""createdAt"": ""2021-07-16T19:08:58.994Z"",
-        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
-        ""foundBy"": ""vboretskyi@gmail.com""
-    },
-    {
-        ""ruleId"": ""aria-allowed-attr"",
-        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
-        ""help"": ""Elements must only use allowed ARIA attributes"",
-        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=AxeChrome"",
-        ""impact"": ""serious"",
-        ""isManual"": false,
-        ""selector"": [
-            "".ant-pagination-item-link > .anticon-right.anticon[aria-label=\""icon\\:\\ right\""]""
-        ],
-        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
-        ""source"": ""<i aria-label=\""icon: right\"" class=\""anticon anticon-right\"">"",
-        ""tags"": [
-            ""cat.aria"",
-            ""wcag2a"",
-            ""wcag412""
-        ],
-        ""igt"": """",
-        ""shareURL"": """",
-        ""createdAt"": ""2021-07-16T19:08:58.994Z"",
-        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
-        ""foundBy"": ""vboretskyi@gmail.com""
-    }
-]"
+20,Table,null,
 21,Tabs,1,"[
     {
         ""ruleId"": ""aria-allowed-attr"",

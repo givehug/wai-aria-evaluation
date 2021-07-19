@@ -1,6 +1,6 @@
 <template>
   <div>
-    <BButton variant="success">Button</BButton>
+    <BButton variant="success" @click="log">Button</BButton>
     <BButton variant="danger" disabled>Disabled</BButton>
   </div>
 </template>
@@ -9,6 +9,11 @@
 import { BButton } from 'bootstrap-vue';
 
 export default {
-  components: { BButton }
+  components: { BButton },
+  methods: {
+    log() {
+      console.log(1);
+    }
+  }
 };
 </script>
