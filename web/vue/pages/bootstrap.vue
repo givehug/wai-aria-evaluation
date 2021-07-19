@@ -79,15 +79,6 @@
 </template>
 
 <script lang="ts">
-// Note:
-// - Links generate href element, standard html
-// - labels have to be created by devs
-// - wai aria practices are very limited, libraries provide much more
-// - hovewer no libraries so far provided Feed, Window Splitter
-// - most of the widgets passed 80%+ of the evaluation checklist, however, they can rarely be extended/modified manually by developer, hense they are not accessible
-// - recheck all widgets, and remove native html elements from templates
-// - menu and menu-button are provided as a single widget, but will be tested separatelly
-
 import Vue from 'vue';
 
 import 'bootstrap/dist/css/bootstrap.css';

@@ -26,9 +26,6 @@ import {
 
 import WidgetTemplate from '../widgetsTemplate/Template';
 
-// Note:
-// - different names listbox, tooltip, popup, select, etc
-
 export default function SemanticUI() {
   return (
     <>

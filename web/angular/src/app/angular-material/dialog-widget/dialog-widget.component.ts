@@ -19,9 +19,6 @@ export class DialogWidgetComponent {
     const dialogRef = this.dialog.open(DialogWidgetModalComponent, {
       width: '250px',
       role: 'dialog',
-      // Note:
-      // - The aria-label, aria-labelledby, and aria-describedby attributes can all be set to the dialog element via the MatDialogConfig as well.
-      // Each dialog should typically have a label set via aria-label or aria-labelledby.
     });
 
     dialogRef.afterClosed().subscribe((result) => {

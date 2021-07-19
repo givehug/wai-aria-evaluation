@@ -39,7 +39,3 @@ app.listen(port, () => {
     `WAI-ARIA evaluation APP started, open http://localhost:${port} in your browser`
   );
 });
-
-// Note:
-// - pkg bundles static files from ./build into executables, is it possible to only build server script ?
-//    - https://github.com/vercel/pkg/issues/245

@@ -89,10 +89,6 @@
 </template>
 
 <script lang="ts">
-// Note:
-// - requirements for project - node and npm
-// - vue libs and components can be added in corresponding directories and then with these commands ... you can build a project
-
 import Vue from 'vue';
 import WidgetTemplate from '../components/WidgetTemplate.vue';
 

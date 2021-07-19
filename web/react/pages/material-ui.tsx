@@ -49,11 +49,6 @@ import TreeItem from '@material-ui/lab/TreeItem';
 
 import WidgetTemplate from '../widgetsTemplate/Template';
 
-// Note:
-// - they give tips on accessibility for each component in docs
-// - menu buttons are a part of menus
-// -some components have aria lavels in examples
-
 export default function MaterialUI() {
   return (
     <WidgetTemplate
@@ -198,11 +193,7 @@ function BreadcrumbsWidget() {
       <Link color="inherit" href="/getting-started/installation/">
         Core
       </Link>
-      <Link
-        color="textPrimary"
-        href="#"
-        aria-current="page" // Note: have to set this explicitly
-      >
+      <Link color="textPrimary" href="#" aria-current="page">
         Breadcrumb
       </Link>
     </Breadcrumbs>

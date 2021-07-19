@@ -18,10 +18,6 @@
 </template>
 
 <script lang="ts">
-// Note:
-// this lib does not work correctly with standalone components
-// - https://github.com/vuematerial/vue-material/issues/1974
-
 import Vue from 'vue';
 
 // import 'vue-material/dist/vue-material.min.css';

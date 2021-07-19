@@ -25,9 +25,6 @@ import {
 
 import WidgetTemplate from '../widgetsTemplate/Template';
 
-// Note:
-// - the bundle size is huge ~500kb
-
 export default function AntDesign() {
   return (
     <>

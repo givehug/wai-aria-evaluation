@@ -19,9 +19,6 @@ import Table from 'react-bootstrap/Table';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-// Note:
-// - menu button is usually implemented in menu
-
 export default function Bootstrap() {
   return (
     <WidgetTemplate

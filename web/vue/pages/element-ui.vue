@@ -98,10 +98,6 @@
 </template>
 
 <script lang="ts">
-// Note:
-// - Vuetify not used - not possible to use in the same projects with other libraries
-// - overall some libs allow to put any html attribute onto the widget including aria attributes, however they dont come with the set by default
-
 import Vue from 'vue';
 
 import WidgetTemplate from '../components/WidgetTemplate.vue';

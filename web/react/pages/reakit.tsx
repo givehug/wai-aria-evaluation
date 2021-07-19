@@ -30,9 +30,6 @@ import MenuWidget from './components/reakit/MenuWidget';
 
 import WidgetTemplate from '../widgetsTemplate/Template';
 
-// Note:
-// - were possible components were taken from examples
-
 export default function Reakit() {
   return (
     <Provider unstable_system={system}>
