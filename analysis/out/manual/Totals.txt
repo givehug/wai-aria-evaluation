@@ -1,0 +1,7 @@
+total widgets expected to be tested:     364
+total widgets tested:                    231
+total manual checks performed:           1913
+    - keyboard checks:                   824
+    - aria checks:                       1089
+total mean widget keyboard success rate: 0.82
+total mean widget aria success rate:     0.67
