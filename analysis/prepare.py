@@ -16,7 +16,7 @@ def merge_arc_files():
             del df['#']
             del df['Test output']
             total_df[framework + "/" + library] = df['ErrorCount']
-    total_df.to_csv("../testing/arc/errors.csv", sep='\t', encoding='utf-8')
+    total_df.to_csv("../testing/arc/errors.csv", sep=',', encoding='utf-8')
 
 
 def merge_axe_files():
@@ -32,7 +32,7 @@ def merge_axe_files():
             del df['#']
             del df['Description']
             total_df[framework + "/" + library] = df['Errors']
-    total_df.to_csv("../testing/axe/errors.csv", sep='\t', encoding='utf-8')
+    total_df.to_csv("../testing/axe/errors.csv", sep=',', encoding='utf-8')
 
 
 merge_arc_files()

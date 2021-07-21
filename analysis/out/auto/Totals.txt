@@ -1,0 +1,2 @@
+ARC total errors detected:               146
+AXE total errors detected:               182

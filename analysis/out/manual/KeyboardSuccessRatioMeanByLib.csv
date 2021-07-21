@@ -1,14 +1,14 @@
-React/Chakra-UI	1.00
-React/Material-UI	0.91
-React/Ant-Design	0.74
-React/Reakit	1.00
-React/Bootstrap	0.84
-React/Semantic-UI	0.55
-Vue/Ant-Design	0.75
-Vue/Bootstrap	0.77
-Vue/Element-UI	0.70
-Vue/Vuetify	0.81
-Angular/Ng-Bootstrap	0.81
-Angular/Angular-Material	0.90
-Svelte/Carbon-Components	0.93
-Svelte/Material-UI	0.82
+React/Chakra-UI,1.00
+React/Material-UI,0.91
+React/Ant-Design,0.74
+React/Reakit,1.00
+React/Bootstrap,0.84
+React/Semantic-UI,0.55
+Vue/Ant-Design,0.75
+Vue/Bootstrap,0.77
+Vue/Element-UI,0.70
+Vue/Vuetify,0.81
+Angular/Ng-Bootstrap,0.81
+Angular/Angular-Material,0.90
+Svelte/Carbon-Components,0.93
+Svelte/Material-UI,0.82

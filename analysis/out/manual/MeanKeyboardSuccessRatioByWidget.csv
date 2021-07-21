@@ -1,26 +1,26 @@
-Accordion	0.92
-Alert	1.00
-AlertDialog	0.75
-Breadcrumbs	1.00
-Button	1.00
-Carousel	0.82
-Checkbox	1.00
-Combobox	0.95
-Dialog	0.84
-Disclosure	0.81
-Feed	1.00
-Link	nan
-Listbox	0.82
-Menu	0.53
-MenuButton	0.62
-RadioGroup	0.98
-Slider	0.93
-MultiThumbSlider	0.92
-Spinbutton	0.70
-Table	1.00
-Tabs	0.73
-Toolbar	0.62
-Tooltip	0.54
-TreeView	0.39
-TreeGrid	nan
-WindowSplitter	nan
+Accordion,0.92
+Alert,1.00
+AlertDialog,0.75
+Breadcrumbs,1.00
+Button,1.00
+Carousel,0.82
+Checkbox,1.00
+Combobox,0.95
+Dialog,0.84
+Disclosure,0.81
+Feed,1.00
+Link,nan
+Listbox,0.82
+Menu,0.53
+MenuButton,0.62
+RadioGroup,0.98
+Slider,0.93
+MultiThumbSlider,0.92
+Spinbutton,0.70
+Table,1.00
+Tabs,0.73
+Toolbar,0.62
+Tooltip,0.54
+TreeView,0.39
+TreeGrid,nan
+WindowSplitter,nan
