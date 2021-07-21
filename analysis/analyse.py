@@ -84,6 +84,14 @@ def manual():
     aria_errors = df.applymap(map_error_count("aria"))
     write_csv(aria_errors, "./out/manual/ErrorsAria.csv")
 
+    # mean widget errors by lib
+    mean_keyboard_errors = keyboard_errors.mean(axis=0).map(precision_2.format)
+    write_csv_no_header(mean_keyboard_errors,
+                        "./out/manual/MeanWidgetErrorsKeyboardByLib.csv")
+    mean_aria_errors = aria_errors.mean(axis=0).map(precision_2.format)
+    write_csv_no_header(
+        mean_aria_errors, "./out/manual/MeanWidgetErrorsAriaByLib.csv")
+
     # errors found by lib
     keyboard_errors_by_lib = keyboard_errors.sum()
     write_csv_no_header(keyboard_errors_by_lib,
