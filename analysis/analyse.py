@@ -50,6 +50,11 @@ def map_to_int(index):
 
 
 def manual():
+    def concat_keyboard_aria(df_aria, df_key):
+        x = pd.concat([df_aria, df_key], axis=1, ignore_index=True)
+        x = x.rename(columns={0: 'Keyboard', 1: 'ARIA'})
+        return x
+
     df = pd.read_csv(
         "../testing/manual/errors.csv",
         header=0,
@@ -60,23 +65,17 @@ def manual():
     # cleanup
     df.index.names = ['Widget']
 
-    # total checks done
+    # totals
     total_keyboard_checks = df.applymap(map_to_int(0)).sum().sum()
     total_aria_checks = df.applymap(map_to_int(2)).sum().sum()
-
-    # total widgets expected to be tested
     total_widgets_expected = len(df.columns) * len(df.index)  # test 14 * 26
-
-    # total widgets tested
     total_widgets_tested = df.count().sum()
 
-    # ratio of keyboard successfull checks by lib
+    # ratio of successfull checks by lib
     keyboard_success = df.applymap(map_success_ratio("keyboard"))
-    write_csv(keyboard_success, "./out/manual/KeyboardSuccessRatio.csv")
-
-    # ratio of ARIA successfull checks
+    write_csv(keyboard_success, "./out/manual/SuccessRatioKeyboard.csv")
     aria_success = df.applymap(map_success_ratio("aria"))
-    write_csv(aria_success, "./out/manual/AriaSuccessRatio.csv")
+    write_csv(aria_success, "./out/manual/SuccessRatioAria.csv")
 
     # errors found lib/widget
     keyboard_errors = df.applymap(map_error_count("keyboard"))
@@ -86,49 +85,52 @@ def manual():
 
     # mean widget errors by lib
     mean_keyboard_errors = keyboard_errors.mean(axis=0).map(precision_2.format)
-    write_csv_no_header(mean_keyboard_errors,
-                        "./out/manual/MeanWidgetErrorsKeyboardByLib.csv")
     mean_aria_errors = aria_errors.mean(axis=0).map(precision_2.format)
-    write_csv_no_header(
-        mean_aria_errors, "./out/manual/MeanWidgetErrorsAriaByLib.csv")
+    mean_widget_errors_by_lib = concat_keyboard_aria(
+        mean_keyboard_errors,
+        mean_aria_errors
+    )
+    write_csv(
+        mean_widget_errors_by_lib, "./out/manual/MeanWidgetErrorsByLibrary.csv")
 
     # errors found by lib
     keyboard_errors_by_lib = keyboard_errors.sum()
-    write_csv_no_header(keyboard_errors_by_lib,
-                        "./out/manual/ByLibErrorsKeyboard.csv")
     aria_errors_by_lib = aria_errors.sum()
-    write_csv_no_header(aria_errors_by_lib, "./out/manual/ByLibErrorsAria.csv")
+    totals_errors_by_libs = concat_keyboard_aria(
+        keyboard_errors_by_lib,
+        aria_errors_by_lib,
+    )
+    write_csv(totals_errors_by_libs,
+              "./out/manual/TotalErrorsByLibrary.csv")
 
-    # mean keyboard success by library
+    # mean success ratio by library
     keyboard_success_mean = keyboard_success.mean(
         axis=0).map(precision_2.format)
-    write_csv_no_header(keyboard_success_mean,
-                        "./out/manual/KeyboardSuccessRatioMeanByLib.csv")
-
-    # mean ARIA success by library
     aria_success_mean = aria_success.mean(axis=0).map(precision_2.format)
-    write_csv_no_header(aria_success_mean,
-                        "./out/manual/AriaSuccessRatioMeanByLib.csv")
+    total_success_mean = concat_keyboard_aria(
+        keyboard_success_mean,
+        aria_success_mean
+    )
+    write_csv(total_success_mean,
+              "./out/manual/MeanSuccessRatioByLibrary.csv")
 
-    # mean keyboard success across all libs
-    mean_keyboard_success_all = keyboard_success_mean.to_frame().T.applymap(
-        lambda x: float(x)).mean(axis=1).map(precision_2.format)[0]
-
-    # mean ARIA success across all libs
-    mean_aria_success_all = aria_success_mean.to_frame().T.applymap(
-        lambda x: float(x)).mean(axis=1).map(precision_2.format)[0]
-
-    # mean ration of keyboard successfull checks by widget
+    # mean widget success ratio
     mean_keyboard_success_by_widget = df.T.applymap(
         map_success_ratio("keyboard")).mean(axis=0).map(precision_2.format)
-    write_csv_no_header(mean_keyboard_success_by_widget,
-                        "./out/manual/MeanKeyboardSuccessRatioByWidget.csv")
-
-    # mean ration of ARIA successfull checks by widget
     mean_aria_success_by_widget = df.T.applymap(
         map_success_ratio("aria")).mean(axis=0).map(precision_2.format)
-    write_csv_no_header(mean_aria_success_by_widget,
-                        "./out/manual/MeanAriaSuccessRatioByWidget.csv")
+    total_success_by_widget = concat_keyboard_aria(
+        mean_keyboard_success_by_widget,
+        mean_aria_success_by_widget
+    )
+    write_csv(total_success_by_widget,
+              "./out/manual/MeanSuccessRatioByWidget.csv")
+
+    # mean success across all libs
+    mean_keyboard_success_all = keyboard_success_mean.to_frame().T.applymap(
+        lambda x: float(x)).mean(axis=1).map(precision_2.format)[0]
+    mean_aria_success_all = aria_success_mean.to_frame().T.applymap(
+        lambda x: float(x)).mean(axis=1).map(precision_2.format)[0]
 
     with open('./out/manual/Totals.txt', 'w') as file:
         file.write("total widgets expected to be tested:     " +
