@@ -1,2 +1,10 @@
 ARC total errors detected:               146
 AXE total errors detected:               182
+mean errors per library:                 
+AXE        13.000000
+ARC        10.428571
+Average    11.714286
+mean errors per widget:                  
+AXE        0.824783
+ARC        0.662609
+Average    0.743913
