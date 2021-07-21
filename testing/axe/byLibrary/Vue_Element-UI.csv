@@ -1,0 +1,838 @@
+#,Widget,Errors,Description
+1,Accordion,6,"[
+    {
+        ""ruleId"": ""nested-interactive"",
+        ""description"": ""Nested interactive controls are not announced by screen readers"",
+        ""help"": ""Ensure interactive controls are not nested"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/nested-interactive?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-controls=\""el-collapse-content-7491\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element has focusable descendants"",
+        ""source"": ""<div role=\""tab\"" aria-expanded=\""true\"" aria-controls=\""el-collapse-content-7491\"" aria-describedby=\""el-collapse-content-7491\"">"",
+        ""tags"": [
+            ""cat.keyboard"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:25:09.579Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""nested-interactive"",
+        ""description"": ""Nested interactive controls are not announced by screen readers"",
+        ""help"": ""Ensure interactive controls are not nested"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/nested-interactive?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-controls=\""el-collapse-content-5609\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element has focusable descendants"",
+        ""source"": ""<div role=\""tab\"" aria-controls=\""el-collapse-content-5609\"" aria-describedby=\""el-collapse-content-5609\""><div role=\""button\"" id=\""el-collapse-head-291\"" tabindex=\""0\"" class=\""el-collapse-item__header\"">Feedback<i class=\""el-collapse-item__arrow el-icon-arrow-right\""></i></div></div>"",
+        ""tags"": [
+            ""cat.keyboard"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:25:09.579Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""nested-interactive"",
+        ""description"": ""Nested interactive controls are not announced by screen readers"",
+        ""help"": ""Ensure interactive controls are not nested"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/nested-interactive?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-controls=\""el-collapse-content-2186\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element has focusable descendants"",
+        ""source"": ""<div role=\""tab\"" aria-controls=\""el-collapse-content-2186\"" aria-describedby=\""el-collapse-content-2186\""><div role=\""button\"" id=\""el-collapse-head-1482\"" tabindex=\""0\"" class=\""el-collapse-item__header\"">Efficiency<i class=\""el-collapse-item__arrow el-icon-arrow-right\""></i></div></div>"",
+        ""tags"": [
+            ""cat.keyboard"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:25:09.579Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-valid-attr-value"",
+        ""description"": ""Ensures all ARIA attributes have valid values"",
+        ""help"": ""ARIA attributes must conform to valid values"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr-value?application=AxeChrome"",
+        ""needsReview"": true,
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-controls=\""el-collapse-content-7491\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute element ID does not exist on the page: aria-describedby=\""el-collapse-content-7491\"""",
+        ""source"": ""<div role=\""tab\"" aria-expanded=\""true\"" aria-controls=\""el-collapse-content-7491\"" aria-describedby=\""el-collapse-content-7491\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:25:09.579Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-valid-attr-value"",
+        ""description"": ""Ensures all ARIA attributes have valid values"",
+        ""help"": ""ARIA attributes must conform to valid values"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr-value?application=AxeChrome"",
+        ""needsReview"": true,
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-controls=\""el-collapse-content-5609\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute element ID does not exist on the page: aria-describedby=\""el-collapse-content-5609\"""",
+        ""source"": ""<div role=\""tab\"" aria-controls=\""el-collapse-content-5609\"" aria-describedby=\""el-collapse-content-5609\""><div role=\""button\"" id=\""el-collapse-head-291\"" tabindex=\""0\"" class=\""el-collapse-item__header\"">Feedback<i class=\""el-collapse-item__arrow el-icon-arrow-right\""></i></div></div>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:25:09.579Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-valid-attr-value"",
+        ""description"": ""Ensures all ARIA attributes have valid values"",
+        ""help"": ""ARIA attributes must conform to valid values"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr-value?application=AxeChrome"",
+        ""needsReview"": true,
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-controls=\""el-collapse-content-2186\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute element ID does not exist on the page: aria-describedby=\""el-collapse-content-2186\"""",
+        ""source"": ""<div role=\""tab\"" aria-controls=\""el-collapse-content-2186\"" aria-describedby=\""el-collapse-content-2186\""><div role=\""button\"" id=\""el-collapse-head-1482\"" tabindex=\""0\"" class=\""el-collapse-item__header\"">Efficiency<i class=\""el-collapse-item__arrow el-icon-arrow-right\""></i></div></div>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:25:09.579Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+2,Alert,0,
+3,AlertDialog,2,"[
+    {
+        ""ruleId"": ""reading-order-browse-outside-modal"",
+        ""description"": ""Screen readers can read content outside the modal dialog."",
+        ""help"": ""Able to browse outside modal with screen reader"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/reading-order-browse-outside-modal"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.el-popup-parent--hidden > div.el-message-box__wrapper:nth-of-type(2)""
+        ],
+        ""summary"": ""Screen readers can read content outside the modal dialog."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""vue/element-ui/alert dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:26:42.442Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""focus-modal-moves-outside"",
+        ""description"": ""Focus is not maintained within the modal. It is possible to tab out of the modal."",
+        ""help"": ""Focus is not maintained in modal"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/focus-modal-moves-outside"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.el-popup-parent--hidden > div.el-message-box__wrapper:nth-of-type(2)""
+        ],
+        ""summary"": ""Focus is not maintained within the modal. It is possible to tab out of the modal."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""vue/element-ui/alert dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:26:42.451Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+4,Breadcrumbs,0,
+5,Button,0,
+6,Carousel,6,"[
+    {
+        ""ruleId"": ""button-name"",
+        ""description"": ""Ensures buttons have discernible text"",
+        ""help"": ""Buttons must have discernible text"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/button-name?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".el-carousel__arrow--left""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\""none\"" or role=\""presentation\"""",
+        ""source"": ""<button type=\""button\"" class=\""el-carousel__arrow el-carousel__arrow--left\""><i class=\""el-icon-arrow-left\""></i></button>"",
+        ""tags"": [
+            ""cat.name-role-value"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""section508"",
+            ""section508.22.a"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:27:53.384Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""button-name"",
+        ""description"": ""Ensures buttons have discernible text"",
+        ""help"": ""Buttons must have discernible text"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/button-name?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".el-carousel__arrow--right""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\""none\"" or role=\""presentation\"""",
+        ""source"": ""<button type=\""button\"" class=\""el-carousel__arrow el-carousel__arrow--right\""><i class=\""el-icon-arrow-right\""></i></button>"",
+        ""tags"": [
+            ""cat.name-role-value"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""section508"",
+            ""section508.22.a"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:27:53.384Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""button-name"",
+        ""description"": ""Ensures buttons have discernible text"",
+        ""help"": ""Buttons must have discernible text"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/button-name?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".el-carousel__indicator.el-carousel__indicator--horizontal:nth-child(1) > .el-carousel__button""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\""none\"" or role=\""presentation\"""",
+        ""source"": ""<button class=\""el-carousel__button\""><!----></button>"",
+        ""tags"": [
+            ""cat.name-role-value"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""section508"",
+            ""section508.22.a"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:27:53.384Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""button-name"",
+        ""description"": ""Ensures buttons have discernible text"",
+        ""help"": ""Buttons must have discernible text"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/button-name?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".el-carousel__indicator.el-carousel__indicator--horizontal:nth-child(2) > .el-carousel__button""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\""none\"" or role=\""presentation\"""",
+        ""source"": ""<button class=\""el-carousel__button\""><!----></button>"",
+        ""tags"": [
+            ""cat.name-role-value"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""section508"",
+            ""section508.22.a"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:27:53.384Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""button-name"",
+        ""description"": ""Ensures buttons have discernible text"",
+        ""help"": ""Buttons must have discernible text"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/button-name?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".el-carousel__indicator.el-carousel__indicator--horizontal:nth-child(3) > .el-carousel__button""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\""none\"" or role=\""presentation\"""",
+        ""source"": ""<button class=\""el-carousel__button\""><!----></button>"",
+        ""tags"": [
+            ""cat.name-role-value"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""section508"",
+            ""section508.22.a"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:27:53.384Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""button-name"",
+        ""description"": ""Ensures buttons have discernible text"",
+        ""help"": ""Buttons must have discernible text"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/button-name?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".el-carousel__indicator.el-carousel__indicator--horizontal.is-active > .el-carousel__button""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\""none\"" or role=\""presentation\"""",
+        ""source"": ""<button class=\""el-carousel__button\""><!----></button>"",
+        ""tags"": [
+            ""cat.name-role-value"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""section508"",
+            ""section508.22.a"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:27:53.384Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+7,Checkbox,0,
+8,Combobox,1,"[
+    {
+        ""ruleId"": ""aria-valid-attr-value"",
+        ""description"": ""Ensures all ARIA attributes have valid values"",
+        ""help"": ""ARIA attributes must conform to valid values"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr-value?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            ""input[valuekey=\""value\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  Invalid ARIA attribute values: aria-controls=\""id\"", aria-activedescendant=\""el-autocomplete-4179-item--1\"""",
+        ""source"": ""<input type=\""text\"" autocomplete=\""off\"" valuekey=\""value\"" placeholder=\""Please Input\"" fetchsuggestions=\""function () { [native code] }\"" triggeronfocus=\""true\"" debounce=\""300\"" placement=\""bottom-start\"" popperappendtobody=\""true\"" class=\""el-input__inner\"" role=\""textbox\"" aria-autocomplete=\""list\"" aria-controls=\""id\"" aria-activedescendant=\""el-autocomplete-4179-item--1\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:28:43.813Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+9,Dialog,3,"[
+    {
+        ""ruleId"": ""focus-modal-none"",
+        ""description"": ""When the modal is activated, focus is not placed on the modal."",
+        ""help"": ""Focus is not placed on opened modal"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/focus-modal-none"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.el-popup-parent--hidden > div#__nuxt:nth-of-type(1) > div#__layout:nth-of-type(1) > div:nth-of-type(1) > div.container:nth-of-type(1) > div.cards:nth-of-type(1) > div.card:nth-of-type(9) > div.cardContent:nth-of-type(1) > div:nth-of-type(1) > div.el-dialog__wrapper:nth-of-type(1) > div.el-dialog:nth-of-type(1)""
+        ],
+        ""summary"": ""When the modal is activated, focus is not placed on the modal."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""vue/element-ui/dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:29:47.279Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""reading-order-browse-outside-modal"",
+        ""description"": ""Screen readers can read content outside the modal dialog."",
+        ""help"": ""Able to browse outside modal with screen reader"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/reading-order-browse-outside-modal"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.el-popup-parent--hidden > div#__nuxt:nth-of-type(1) > div#__layout:nth-of-type(1) > div:nth-of-type(1) > div.container:nth-of-type(1) > div.cards:nth-of-type(1) > div.card:nth-of-type(9) > div.cardContent:nth-of-type(1) > div:nth-of-type(1) > div.el-dialog__wrapper:nth-of-type(1) > div.el-dialog:nth-of-type(1)""
+        ],
+        ""summary"": ""Screen readers can read content outside the modal dialog."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""vue/element-ui/dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:29:47.292Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""focus-modal-moves-outside"",
+        ""description"": ""Focus is not maintained within the modal. It is possible to tab out of the modal."",
+        ""help"": ""Focus is not maintained in modal"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/focus-modal-moves-outside"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.el-popup-parent--hidden > div#__nuxt:nth-of-type(1) > div#__layout:nth-of-type(1) > div:nth-of-type(1) > div.container:nth-of-type(1) > div.cards:nth-of-type(1) > div.card:nth-of-type(9) > div.cardContent:nth-of-type(1) > div:nth-of-type(1) > div.el-dialog__wrapper:nth-of-type(1) > div.el-dialog:nth-of-type(1)""
+        ],
+        ""summary"": ""Focus is not maintained within the modal. It is possible to tab out of the modal."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""vue/element-ui/dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:29:47.301Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+10,Disclosure,2,"[
+    {
+        ""ruleId"": ""nested-interactive"",
+        ""description"": ""Nested interactive controls are not announced by screen readers"",
+        ""help"": ""Ensure interactive controls are not nested"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/nested-interactive?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-controls=\""el-collapse-content-9592\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element has focusable descendants"",
+        ""source"": ""<div role=\""tab\"" aria-controls=\""el-collapse-content-9592\"" aria-describedby=\""el-collapse-content-9592\"" aria-expanded=\""true\"">"",
+        ""tags"": [
+            ""cat.keyboard"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:30:26.806Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-valid-attr-value"",
+        ""description"": ""Ensures all ARIA attributes have valid values"",
+        ""help"": ""ARIA attributes must conform to valid values"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr-value?application=AxeChrome"",
+        ""needsReview"": true,
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-controls=\""el-collapse-content-9592\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute element ID does not exist on the page: aria-describedby=\""el-collapse-content-9592\"""",
+        ""source"": ""<div role=\""tab\"" aria-controls=\""el-collapse-content-9592\"" aria-describedby=\""el-collapse-content-9592\"" aria-expanded=\""true\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:30:26.806Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+11,Feed,1,"[
+    {
+        ""ruleId"": ""scrollable-region-focusable"",
+        ""description"": ""Elements that have scrollable content must be accessible by keyboard"",
+        ""help"": ""Ensure that scrollable region has keyboard access"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/scrollable-region-focusable?application=AxeChrome"",
+        ""impact"": ""moderate"",
+        ""isManual"": false,
+        ""selector"": [
+            "".infinite-list""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"",
+        ""source"": ""<ul class=\""infinite-list\"" style=\""overflow:auto;\"" data-v-2a16a9dc=\""\"" data-v-6d95dc0e=\""\"">"",
+        ""tags"": [
+            ""cat.keyboard"",
+            ""wcag2a"",
+            ""wcag211""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:30:57.345Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+12,Link,null,
+13,Listbox,0,
+14,Menu,0,
+15,MenuButton,0,
+16,RadioGroup,3,"[
+    {
+        ""ruleId"": ""nested-interactive"",
+        ""description"": ""Nested interactive controls are not announced by screen readers"",
+        ""help"": ""Ensure interactive controls are not nested"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/nested-interactive?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".el-radio.is-checked[role=\""radio\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element has focusable descendants"",
+        ""source"": ""<label role=\""radio\"" aria-checked=\""true\"" tabindex=\""0\"" class=\""el-radio is-checked\"">"",
+        ""tags"": [
+            ""cat.keyboard"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:32:58.735Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""nested-interactive"",
+        ""description"": ""Nested interactive controls are not announced by screen readers"",
+        ""help"": ""Ensure interactive controls are not nested"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/nested-interactive?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".el-radio[role=\""radio\""]:nth-child(2)""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element has focusable descendants"",
+        ""source"": ""<label role=\""radio\"" tabindex=\""-1\"" class=\""el-radio\""><span class=\""el-radio__input\""><span class=\""el-radio__inner\""></span><input type=\""radio\"" aria-hidden=\""true\"" tabindex=\""-1\"" value=\""6\"" class=\""el-radio__original\""></span><span class=\""el-radio__label\"">Option B<!----></span></label>"",
+        ""tags"": [
+            ""cat.keyboard"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:32:58.735Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""nested-interactive"",
+        ""description"": ""Nested interactive controls are not announced by screen readers"",
+        ""help"": ""Ensure interactive controls are not nested"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/nested-interactive?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".el-radio[role=\""radio\""]:nth-child(3)""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element has focusable descendants"",
+        ""source"": ""<label role=\""radio\"" tabindex=\""-1\"" class=\""el-radio\""><span class=\""el-radio__input\""><span class=\""el-radio__inner\""></span><input type=\""radio\"" aria-hidden=\""true\"" tabindex=\""-1\"" value=\""9\"" class=\""el-radio__original\""></span><span class=\""el-radio__label\"">Option C<!----></span></label>"",
+        ""tags"": [
+            ""cat.keyboard"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:32:58.735Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+17,Slider,3,"[
+    {
+        ""ruleId"": ""aria-required-attr"",
+        ""description"": ""Ensures elements with ARIA roles have all required ARIA attributes"",
+        ""help"": ""Required ARIA attributes must be provided"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-required-attr?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-valuemax=\""\\31 00\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA attribute not present: aria-valuenow"",
+        ""source"": ""<div role=\""slider\"" aria-valuemin=\""0\"" aria-valuemax=\""100\"" aria-orientation=\""horizontal\"" class=\""el-slider\"" data-v-6d95dc0e=\""\"" aria-valuetext=\""0\"" aria-label=\""slider between 0 and 100\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:33:40.347Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""nested-interactive"",
+        ""description"": ""Nested interactive controls are not announced by screen readers"",
+        ""help"": ""Ensure interactive controls are not nested"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/nested-interactive?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-valuemax=\""\\31 00\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element has focusable descendants"",
+        ""source"": ""<div role=\""slider\"" aria-valuemin=\""0\"" aria-valuemax=\""100\"" aria-orientation=\""horizontal\"" class=\""el-slider\"" data-v-6d95dc0e=\""\"" aria-valuetext=\""0\"" aria-label=\""slider between 0 and 100\"">"",
+        ""tags"": [
+            ""cat.keyboard"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:33:40.347Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-valid-attr-value"",
+        ""description"": ""Ensures all ARIA attributes have valid values"",
+        ""help"": ""ARIA attributes must conform to valid values"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr-value?application=AxeChrome"",
+        ""needsReview"": true,
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-describedby=\""el-tooltip-7038\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute element ID does not exist on the page: aria-describedby=\""el-tooltip-7038\"""",
+        ""source"": ""<div class=\""el-tooltip el-slider__button\"" aria-describedby=\""el-tooltip-7038\"" tabindex=\""0\""></div>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:33:40.347Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+18,MultiThumbSlider,4,"[
+    {
+        ""ruleId"": ""aria-required-attr"",
+        ""description"": ""Ensures elements with ARIA roles have all required ARIA attributes"",
+        ""help"": ""Required ARIA attributes must be provided"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-required-attr?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-valuemax=\""\\31 0\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA attribute not present: aria-valuenow"",
+        ""source"": ""<div role=\""slider\"" aria-valuemin=\""0\"" aria-valuemax=\""10\"" aria-orientation=\""horizontal\"" class=\""el-slider\"" data-v-6d95dc0e=\""\"" aria-valuetext=\""4-8\"" aria-label=\""slider between 0 and 10\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:34:08.784Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""nested-interactive"",
+        ""description"": ""Nested interactive controls are not announced by screen readers"",
+        ""help"": ""Ensure interactive controls are not nested"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/nested-interactive?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-valuemax=\""\\31 0\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element has focusable descendants"",
+        ""source"": ""<div role=\""slider\"" aria-valuemin=\""0\"" aria-valuemax=\""10\"" aria-orientation=\""horizontal\"" class=\""el-slider\"" data-v-6d95dc0e=\""\"" aria-valuetext=\""4-8\"" aria-label=\""slider between 0 and 10\"">"",
+        ""tags"": [
+            ""cat.keyboard"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:34:08.784Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-valid-attr-value"",
+        ""description"": ""Ensures all ARIA attributes have valid values"",
+        ""help"": ""ARIA attributes must conform to valid values"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr-value?application=AxeChrome"",
+        ""needsReview"": true,
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-describedby=\""el-tooltip-7224\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute element ID does not exist on the page: aria-describedby=\""el-tooltip-7224\"""",
+        ""source"": ""<div class=\""el-tooltip el-slider__button\"" aria-describedby=\""el-tooltip-7224\"" tabindex=\""0\""></div>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:34:08.784Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-valid-attr-value"",
+        ""description"": ""Ensures all ARIA attributes have valid values"",
+        ""help"": ""ARIA attributes must conform to valid values"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr-value?application=AxeChrome"",
+        ""needsReview"": true,
+        ""isManual"": false,
+        ""selector"": [
+            ""div[aria-describedby=\""el-tooltip-2972\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute element ID does not exist on the page: aria-describedby=\""el-tooltip-2972\"""",
+        ""source"": ""<div class=\""el-tooltip el-slider__button\"" aria-describedby=\""el-tooltip-2972\"" tabindex=\""0\""></div>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:34:08.784Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+19,Spinbutton,0,
+20,Table,null,
+21,Tabs,0,
+22,Toolbar,null,
+23,Tooltip,0,
+24,TreeView,3,"[
+    {
+        ""ruleId"": ""aria-valid-attr-value"",
+        ""description"": ""Ensures all ARIA attributes have valid values"",
+        ""help"": ""ARIA attributes must conform to valid values"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr-value?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".el-tree > .el-tree-node.is-focusable[role=\""treeitem\""]:nth-child(1)""
+        ],
+        ""summary"": ""Fix all of the following:\n  Invalid ARIA attribute value: aria-disabled=\""\"""",
+        ""source"": ""<div role=\""treeitem\"" tabindex=\""0\"" aria-disabled=\""\"" draggable=\""false\"" class=\""el-tree-node is-focusable\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:36:17.186Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-valid-attr-value"",
+        ""description"": ""Ensures all ARIA attributes have valid values"",
+        ""help"": ""ARIA attributes must conform to valid values"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr-value?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".is-current""
+        ],
+        ""summary"": ""Fix all of the following:\n  Invalid ARIA attribute value: aria-disabled=\""\"""",
+        ""source"": ""<div role=\""treeitem\"" tabindex=\""-1\"" aria-disabled=\""\"" draggable=\""false\"" class=\""el-tree-node is-current is-focusable\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:36:17.186Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-valid-attr-value"",
+        ""description"": ""Ensures all ARIA attributes have valid values"",
+        ""help"": ""ARIA attributes must conform to valid values"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr-value?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".el-tree-node.is-focusable[role=\""treeitem\""]:nth-child(3)""
+        ],
+        ""summary"": ""Fix all of the following:\n  Invalid ARIA attribute value: aria-disabled=\""\"""",
+        ""source"": ""<div role=\""treeitem\"" tabindex=\""-1\"" aria-disabled=\""\"" draggable=\""false\"" class=\""el-tree-node is-focusable\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:36:17.186Z"",
+        ""testUrl"": ""http://localhost:3000/vue/element-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+25,TreeGrid,null,
+26,WindowSplitter,null,

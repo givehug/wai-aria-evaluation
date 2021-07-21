@@ -1,12 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
-import { widgets, WidgetName, WidgetNumber } from './types';
+import { widgets, Widget, WidgetNumber } from './types';
 import Card from './Card';
 import styles from '../styles/Widgets.module.css';
 
 type Props = {
   libraryName: string;
-} & Record<WidgetName, JSX.Element | undefined>;
+} & Record<Widget, JSX.Element | undefined>;
 
 const WidgetTemplate = ({ libraryName, ...widgetsElements }: Props) => {
   return (

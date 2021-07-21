@@ -1,0 +1,758 @@
+#,Widget,Errors,Description
+1,Accordion,6,"[
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-collapse-item-active > .ant-collapse-header[role=\""button\""] > .ant-collapse-arrow.anticon-right[aria-label=\""icon\\:\\ right\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: right\"" class=\""anticon anticon-right ant-collapse-arrow\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:49:53.526Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-collapse-item[role=\""tablist\""]:nth-child(2) > .ant-collapse-header[role=\""button\""] > .ant-collapse-arrow.anticon-right[aria-label=\""icon\\:\\ right\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: right\"" class=\""anticon anticon-right ant-collapse-arrow\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:49:53.526Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-collapse-item-disabled > .ant-collapse-header[role=\""button\""] > .ant-collapse-arrow.anticon-right[aria-label=\""icon\\:\\ right\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: right\"" class=\""anticon anticon-right ant-collapse-arrow\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:49:53.526Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-children"",
+        ""description"": ""Ensures elements with an ARIA role that require child roles contain them"",
+        ""help"": ""Certain ARIA roles must contain particular children"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-required-children?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-collapse-item-active""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA child role not present: tab"",
+        ""source"": ""<div role=\""tablist\"" class=\""ant-collapse-item ant-collapse-item-active\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:49:53.526Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-children"",
+        ""description"": ""Ensures elements with an ARIA role that require child roles contain them"",
+        ""help"": ""Certain ARIA roles must contain particular children"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-required-children?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-collapse-item[role=\""tablist\""]:nth-child(2)""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA child role not present: tab"",
+        ""source"": ""<div role=\""tablist\"" class=\""ant-collapse-item\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:49:53.526Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-children"",
+        ""description"": ""Ensures elements with an ARIA role that require child roles contain them"",
+        ""help"": ""Certain ARIA roles must contain particular children"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-required-children?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-collapse-item-disabled""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA child role not present: tab"",
+        ""source"": ""<div role=\""tablist\"" class=\""ant-collapse-item ant-collapse-item-disabled\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:49:53.526Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+2,Alert,1,"[
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".anticon-close""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: close\"" class=\""anticon anticon-close\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:51:06.110Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+3,AlertDialog,2,"[
+    {
+        ""ruleId"": ""reading-order-browse-outside-modal"",
+        ""description"": ""Screen readers can read content outside the modal dialog."",
+        ""help"": ""Able to browse outside modal with screen reader"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/reading-order-browse-outside-modal"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body > div:nth-of-type(3) > div.ant-modal-root.ant-modal-confirm.ant-modal-confirm-confirm:nth-of-type(1) > div.ant-modal-wrap:nth-of-type(2)""
+        ],
+        ""summary"": ""Screen readers can read content outside the modal dialog."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""vue/ant-design"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:52:39.670Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""focus-modal-not-returned"",
+        ""description"": ""When the modal or similar element is closed, focus is not returned to the triggering element."",
+        ""help"": ""Modal is closed, focus is not returned to trigger"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/focus-modal-not-returned"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body > div:nth-of-type(3) > div.ant-modal-root.ant-modal-confirm.ant-modal-confirm-confirm:nth-of-type(1) > div.ant-modal-wrap:nth-of-type(2)""
+        ],
+        ""summary"": ""When the modal or similar element is closed, focus is not returned to the triggering element."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""vue/ant-design"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:52:39.682Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+4,Breadcrumbs,0,
+5,Button,0,
+6,Carousel,0,
+7,Checkbox,0,
+8,Combobox,2,"[
+    {
+        ""ruleId"": ""aria-required-attr"",
+        ""description"": ""Ensures elements with ARIA roles have all required ARIA attributes"",
+        ""help"": ""Required ARIA attributes must be provided"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-required-attr?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-select-combobox > .ant-select-selection.ant-select-selection--single[role=\""combobox\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA attribute not present: aria-expanded"",
+        ""source"": ""<div role=\""combobox\"" aria-autocomplete=\""list\"" aria-haspopup=\""true\"" aria-controls=\""9f1cc646-9646-40a6-ada4-e0049b91072d\"" class=\""ant-select-selection ant-select-selection--single\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:56:33.329Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-children"",
+        ""description"": ""Ensures elements with an ARIA role that require child roles contain them"",
+        ""help"": ""Certain ARIA roles must contain particular children"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-required-children?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-select-combobox > .ant-select-selection.ant-select-selection--single[role=\""combobox\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA child role not present: textbox"",
+        ""source"": ""<div role=\""combobox\"" aria-autocomplete=\""list\"" aria-haspopup=\""true\"" aria-controls=\""9f1cc646-9646-40a6-ada4-e0049b91072d\"" class=\""ant-select-selection ant-select-selection--single\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:56:33.329Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+9,Dialog,1,"[
+    {
+        ""ruleId"": ""reading-order-browse-outside-modal"",
+        ""description"": ""Screen readers can read content outside the modal dialog."",
+        ""help"": ""Able to browse outside modal with screen reader"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/reading-order-browse-outside-modal"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body > div:nth-of-type(3) > div.ant-modal-root:nth-of-type(1) > div.ant-modal-wrap:nth-of-type(2)""
+        ],
+        ""summary"": ""Screen readers can read content outside the modal dialog."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""vue/ant-design/dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:58:22.204Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+10,Disclosure,2,"[
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".card[data-v-6d95dc0e=\""\""]:nth-child(10) > .cardContent[data-v-6d95dc0e=\""\""] > div[data-v-6d95dc0e=\""\""] > .ant-collapse.ant-collapse-icon-position-left > .ant-collapse-item-active.ant-collapse-item[role=\""tablist\""] > .ant-collapse-header[role=\""button\""] > .ant-collapse-arrow.anticon-right[aria-label=\""icon\\:\\ right\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: right\"" class=\""anticon anticon-right ant-collapse-arrow\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:59:44.749Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-children"",
+        ""description"": ""Ensures elements with an ARIA role that require child roles contain them"",
+        ""help"": ""Certain ARIA roles must contain particular children"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-required-children?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".card[data-v-6d95dc0e=\""\""]:nth-child(10) > .cardContent[data-v-6d95dc0e=\""\""] > div[data-v-6d95dc0e=\""\""] > .ant-collapse.ant-collapse-icon-position-left > .ant-collapse-item-active.ant-collapse-item[role=\""tablist\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA child role not present: tab"",
+        ""source"": ""<div role=\""tablist\"" class=\""ant-collapse-item ant-collapse-item-active\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T18:59:44.749Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+11,Feed,null,
+12,Link,null,
+13,Listbox,4,"[
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".card[data-v-6d95dc0e=\""\""]:nth-child(13) > .cardContent[data-v-6d95dc0e=\""\""] > .ant-select.ant-select-enabled[data-v-6d95dc0e=\""\""] > .ant-select-selection.ant-select-selection--single[role=\""combobox\""] > .ant-select-arrow[unselectable=\""on\""] > .anticon-down.ant-select-arrow-icon[aria-label=\""icon\\:\\ down\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: down\"" class=\""anticon anticon-down ant-select-arrow-icon\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:03:10.275Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-input-field-name"",
+        ""description"": ""Ensures every ARIA input field has an accessible name"",
+        ""help"": ""ARIA input fields must have an accessible name"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-input-field-name?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".card[data-v-6d95dc0e=\""\""]:nth-child(13) > .cardContent[data-v-6d95dc0e=\""\""] > .ant-select.ant-select-enabled[data-v-6d95dc0e=\""\""] > .ant-select-selection.ant-select-selection--single[role=\""combobox\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"",
+        ""source"": ""<div role=\""combobox\"" aria-autocomplete=\""list\"" aria-haspopup=\""true\"" aria-controls=\""0c6a3881-a2ee-4f18-cd7a-84e8f3aca377\"" class=\""ant-select-selection ant-select-selection--single\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:03:10.275Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-attr"",
+        ""description"": ""Ensures elements with ARIA roles have all required ARIA attributes"",
+        ""help"": ""Required ARIA attributes must be provided"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-required-attr?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".card[data-v-6d95dc0e=\""\""]:nth-child(13) > .cardContent[data-v-6d95dc0e=\""\""] > .ant-select.ant-select-enabled[data-v-6d95dc0e=\""\""] > .ant-select-selection.ant-select-selection--single[role=\""combobox\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA attribute not present: aria-expanded"",
+        ""source"": ""<div role=\""combobox\"" aria-autocomplete=\""list\"" aria-haspopup=\""true\"" aria-controls=\""0c6a3881-a2ee-4f18-cd7a-84e8f3aca377\"" class=\""ant-select-selection ant-select-selection--single\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:03:10.275Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-children"",
+        ""description"": ""Ensures elements with an ARIA role that require child roles contain them"",
+        ""help"": ""Certain ARIA roles must contain particular children"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-required-children?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".card[data-v-6d95dc0e=\""\""]:nth-child(13) > .cardContent[data-v-6d95dc0e=\""\""] > .ant-select.ant-select-enabled[data-v-6d95dc0e=\""\""] > .ant-select-selection.ant-select-selection--single[role=\""combobox\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA child role not present: textbox"",
+        ""source"": ""<div role=\""combobox\"" aria-autocomplete=\""list\"" aria-haspopup=\""true\"" aria-controls=\""0c6a3881-a2ee-4f18-cd7a-84e8f3aca377\"" class=\""ant-select-selection ant-select-selection--single\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:03:10.275Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+14,Menu,2,"[
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".card[data-v-6d95dc0e=\""\""]:nth-child(14) > .cardContent[data-v-6d95dc0e=\""\""] > div[data-v-6d95dc0e=\""\""] > .ant-menu-horizontal.ant-menu-root.ant-menu > .ant-menu-item-selected.ant-menu-item[role=\""menuitem\""] > .anticon-mail.anticon[aria-label=\""icon\\:\\ mail\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: mail\"" class=\""anticon anticon-mail\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:05:32.437Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".card[data-v-6d95dc0e=\""\""]:nth-child(14) > .cardContent[data-v-6d95dc0e=\""\""] > div[data-v-6d95dc0e=\""\""] > .ant-menu-horizontal.ant-menu-root.ant-menu > .ant-menu-submenu-horizontal.ant-menu-submenu[role=\""menuitem\""]:nth-child(4) > .ant-menu-submenu-title[aria-haspopup=\""true\""] > .submenu-title-wrapper > .anticon-setting.anticon[aria-label=\""icon\\:\\ setting\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: setting\"" class=\""anticon anticon-setting\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:05:32.437Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+15,MenuButton,1,"[
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".card[data-v-6d95dc0e=\""\""]:nth-child(15) > .cardContent[data-v-6d95dc0e=\""\""] > div[data-v-6d95dc0e=\""\""] > .ant-menu-horizontal.ant-menu-root.ant-menu > .ant-menu-item-selected.ant-menu-item[role=\""menuitem\""] > .anticon-mail.anticon[aria-label=\""icon\\:\\ mail\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: mail\"" class=\""anticon anticon-mail\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:06:17.298Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+16,RadioGroup,0,
+17,Slider,1,"[
+    {
+        ""ruleId"": ""aria-input-field-name"",
+        ""description"": ""Ensures every ARIA input field has an accessible name"",
+        ""help"": ""ARIA input fields must have an accessible name"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-input-field-name?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".card[data-v-6d95dc0e=\""\""]:nth-child(17) > .cardContent[data-v-6d95dc0e=\""\""] > .ant-slider[data-v-6d95dc0e=\""\""] > .ant-slider-handle[role=\""slider\""][aria-valuemin=\""\\30 \""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"",
+        ""source"": ""<div role=\""slider\"" tabindex=\""0\"" aria-valuemin=\""0\"" aria-valuemax=\""100\"" aria-valuenow=\""30\"" class=\""ant-slider-handle\"" style=\""left:30%;right:auto;transform:translateX(-50%);\""></div>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:07:15.873Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+18,MultiThumbSlider,2,"[
+    {
+        ""ruleId"": ""aria-input-field-name"",
+        ""description"": ""Ensures every ARIA input field has an accessible name"",
+        ""help"": ""ARIA input fields must have an accessible name"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-input-field-name?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-slider-handle-1""
+        ],
+        ""summary"": ""Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"",
+        ""source"": ""<div role=\""slider\"" tabindex=\""0\"" aria-valuemin=\""0\"" aria-valuemax=\""100\"" aria-valuenow=\""20\"" class=\""ant-slider-handle ant-slider-handle-1\"" style=\""left:20%;right:auto;transform:translateX(-50%);\""></div>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:07:52.707Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-input-field-name"",
+        ""description"": ""Ensures every ARIA input field has an accessible name"",
+        ""help"": ""ARIA input fields must have an accessible name"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-input-field-name?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-slider-handle-2""
+        ],
+        ""summary"": ""Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"",
+        ""source"": ""<div role=\""slider\"" tabindex=\""0\"" aria-valuemin=\""0\"" aria-valuemax=\""100\"" aria-valuenow=\""50\"" class=\""ant-slider-handle ant-slider-handle-2\"" style=\""left:50%;right:auto;transform:translateX(-50%);\""></div>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:07:52.707Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+19,Spinbutton,1,"[
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".anticon-clock-circle""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: clock-circle\"" class=\""anticon anticon-clock-circle ant-time-picker-clock-icon\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:08:21.358Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+20,Table,null,
+21,Tabs,1,"[
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-tabs-tab-prev-icon-target""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: left\"" class=\""anticon anticon-left ant-tabs-tab-prev-icon-target\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:09:43.322Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-tabs-tab-next-icon-target""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: right\"" class=\""anticon anticon-right ant-tabs-tab-next-icon-target\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:09:43.322Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+22,Toolbar,null,
+23,Tooltip,0,
+24,TreeView,4,"[
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-tree > .ant-tree-treenode-switcher-open[role=\""treeitem\""] > .ant-tree-switcher_open.ant-tree-switcher > .anticon-caret-down.ant-tree-switcher-icon[aria-label=\""icon\\:\\ caret-down\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: caret-down\"" class=\""anticon anticon-caret-down ant-tree-switcher-icon\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:10:52.865Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-tree-child-tree.ant-tree-child-tree-open[data-expanded=\""true\""] > .ant-tree-treenode-switcher-open[role=\""treeitem\""]:nth-child(1) > .ant-tree-switcher_open.ant-tree-switcher > .anticon-caret-down.ant-tree-switcher-icon[aria-label=\""icon\\:\\ caret-down\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: caret-down\"" class=\""anticon anticon-caret-down ant-tree-switcher-icon\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:10:52.865Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-tree-treenode-switcher-open[role=\""treeitem\""]:nth-child(2) > .ant-tree-switcher_open.ant-tree-switcher > .anticon-caret-down.ant-tree-switcher-icon[aria-label=\""icon\\:\\ caret-down\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: caret-down\"" class=\""anticon anticon-caret-down ant-tree-switcher-icon\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:10:52.865Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-tree-switcher_close > .anticon-caret-down.ant-tree-switcher-icon[aria-label=\""icon\\:\\ caret-down\""]""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute cannot be used, add a role attribute or use a different element: aria-label"",
+        ""source"": ""<i aria-label=\""icon: caret-down\"" class=\""anticon anticon-caret-down ant-tree-switcher-icon\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T19:10:52.865Z"",
+        ""testUrl"": ""http://localhost:3000/vue/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+25,TreeGrid,null,
+26,WindowSplitter,null,

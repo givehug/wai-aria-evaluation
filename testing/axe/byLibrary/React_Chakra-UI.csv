@@ -1,0 +1,103 @@
+#,Widget,Errors,Description
+1,Accordion,0,
+2,Alert,0,
+3,AlertDialog,1,"[
+    {
+        ""ruleId"": ""reading-order-browse-outside-modal"",
+        ""description"": ""Screen readers can read content outside the modal dialog."",
+        ""help"": ""Able to browse outside modal with screen reader"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/reading-order-browse-outside-modal"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.chakra-ui-light > div.chakra-portal:nth-of-type(4) > div.chakra-modal__overlay.css-hdd9l7:nth-of-type(1) > div:nth-of-type(3) > div.chakra-modal__content-container.css-v9b9hc:nth-of-type(1) > section#chakra-modal-3.chakra-modal__content.css-hxtskf:nth-of-type(1)""
+        ],
+        ""summary"": ""Screen readers can read content outside the modal dialog."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""WAI-ARIA Evaluation - ReactJS / Chakra UI"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-13T17:07:42.928Z"",
+        ""testUrl"": ""http://localhost:3000/react/chakra-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+4,Breadcrumbs,0,
+5,Button,0,
+6,Carousel,null,
+7,Checkbox,0,
+8,Combobox,null,
+9,Dialog,1,"[
+    {
+        ""ruleId"": ""reading-order-browse-outside-modal"",
+        ""description"": ""Screen readers can read content outside the modal dialog."",
+        ""help"": ""Able to browse outside modal with screen reader"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/reading-order-browse-outside-modal"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.chakra-ui-light > div.chakra-portal:nth-of-type(4) > div:nth-of-type(4) > div.chakra-modal__content-container.css-v9b9hc:nth-of-type(1) > section#chakra-modal-5.chakra-modal__content.css-hxtskf:nth-of-type(1)""
+        ],
+        ""summary"": ""Screen readers can read content outside the modal dialog."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""WAI-ARIA Evaluation - ReactJS / Chakra UI - dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-13T17:57:43.901Z"",
+        ""testUrl"": ""http://localhost:3000/react/chakra-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+10,Disclosure,0,
+11,Feed,null,
+12,Link,null,
+13,Listbox,0,
+14,Menu,0,
+15,MenuButton,0,
+16,RadioGroup,0,
+17,Slider,0,
+18,MultiThumbSlider,null,
+19,Spinbutton,null,
+20,Table,1,"[
+    {
+        ""ruleId"": ""th-has-data-cells"",
+        ""description"": ""Ensure that each table header in a data table refers to data cells"",
+        ""help"": ""All th elements and elements with role=columnheader/rowheader must have data cells they describe"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/th-has-data-cells?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": false,
+        ""selector"": [
+            ""table""
+        ],
+        ""summary"": ""Fix all of the following:\n  Table data cells are missing or empty"",
+        ""source"": ""<table role=\""table\"" class=\""chakra-table css-5605sr\"">"",
+        ""tags"": [
+            ""cat.tables"",
+            ""wcag2a"",
+            ""wcag131"",
+            ""section508"",
+            ""section508.22.g""
+        ],
+        ""igt"": """",
+        ""testName"": ""WAI-ARIA Evaluation - ReactJS / Chakra UI - table"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-13T18:16:19.083Z"",
+        ""testUrl"": ""http://localhost:3000/react/chakra-ui"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+21,Tabs,0,
+22,Toolbar,null,
+23,Tooltip,0,
+24,TreeView,null,
+25,TreeGrid,null,
+26,WindowSplitter,null,

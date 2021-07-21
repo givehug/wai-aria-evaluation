@@ -1,0 +1,543 @@
+#,Widget,Errors,Description
+1,Accordion,0,
+2,Alert,0,
+3,AlertDialog,2,"[
+    {
+        ""ruleId"": ""reading-order-browse-outside-modal"",
+        ""description"": ""Screen readers can read content outside the modal dialog."",
+        ""help"": ""Able to browse outside modal with screen reader"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/reading-order-browse-outside-modal"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.bx--body--with-modal-open > div#sapper:nth-of-type(1) > div.container:nth-of-type(1) > div.container.svelte-zfy1o:nth-of-type(1) > div.cards.svelte-zfy1o:nth-of-type(1) > div.card.svelte-zfy1o:nth-of-type(3) > div.cardContent.svelte-zfy1o:nth-of-type(1) > div:nth-of-type(1) > div#ccs-0\\.vp0rcswdr2h.bx--modal.bx--modal-tall.bx--modal--danger.is-visible:nth-of-type(1) > div.bx--modal-container:nth-of-type(1)""
+        ],
+        ""summary"": ""Screen readers can read content outside the modal dialog."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""Carbon Components / svelte/ alert dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:14:22.285Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""focus-modal-not-returned"",
+        ""description"": ""When the modal or similar element is closed, focus is not returned to the triggering element."",
+        ""help"": ""Modal is closed, focus is not returned to trigger"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/focus-modal-not-returned"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.bx--body--with-modal-open > div#sapper:nth-of-type(1) > div.container:nth-of-type(1) > div.container.svelte-zfy1o:nth-of-type(1) > div.cards.svelte-zfy1o:nth-of-type(1) > div.card.svelte-zfy1o:nth-of-type(3) > div.cardContent.svelte-zfy1o:nth-of-type(1) > div:nth-of-type(1) > div#ccs-0\\.vp0rcswdr2h.bx--modal.bx--modal-tall.bx--modal--danger.is-visible:nth-of-type(1) > div.bx--modal-container:nth-of-type(1)""
+        ],
+        ""summary"": ""When the modal or similar element is closed, focus is not returned to the triggering element."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""Carbon Components / svelte/ alert dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:14:22.293Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+4,Breadcrumbs,0,
+5,Button,0,
+6,Carousel,null,
+7,Checkbox,0,
+8,Combobox,4,"[
+    {
+        ""ruleId"": ""aria-allowed-attr"",
+        ""description"": ""Ensures ARIA attributes are allowed for an element's role"",
+        ""help"": ""Elements must only use allowed ARIA attributes"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-allowed-attr?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            ""#ccs-0\\.ql4egxgoc3""
+        ],
+        ""summary"": ""Fix any of the following:\n  ARIA attribute is not allowed: aria-expanded=\""true\"""",
+        ""source"": ""<input tabindex=\""0\"" autocomplete=\""off\"" aria-autocomplete=\""list\"" aria-expanded=\""true\"" aria-labelledby=\""combo-ccs-0.ql4egxgoc3\"" aria-disabled=\""false\"" placeholder=\""Select contact method\"" id=\""ccs-0.ql4egxgoc3\"" class=\""bx--text-input\"" aria-owns=\""menu-ccs-0.ql4egxgoc3\"" aria-controls=\""menu-ccs-0.ql4egxgoc3\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:17:32.338Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-children"",
+        ""description"": ""Ensures elements with an ARIA role that require child roles contain them"",
+        ""help"": ""Certain ARIA roles must contain particular children"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-required-children?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            ""#combo-ccs-0\\.ql4egxgoc3""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA child role not present: option"",
+        ""source"": ""<div role=\""listbox\"" tabindex=\""-1\"" class=\""bx--combo-box false bx--list-box bx--list-box--expanded\"" id=\""combo-ccs-0.ql4egxgoc3\"" aria-label=\""Choose an item\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:17:32.338Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-children"",
+        ""description"": ""Ensures elements with an ARIA role that require child roles contain them"",
+        ""help"": ""Certain ARIA roles must contain particular children"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-required-children?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            ""#menu-ccs-0\\.ql4egxgoc3""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA child role not present: option"",
+        ""source"": ""<div role=\""listbox\"" id=\""menu-ccs-0.ql4egxgoc3\"" aria-label=\""Choose an item\"" class=\""bx--list-box__menu\""><div id=\""0\"" class=\""bx--list-box__menu-item\""><div class=\""bx--list-box__menu-item__option\"">Slack  </div></div></div>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:17:32.338Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""duplicate-id-active"",
+        ""description"": ""Ensures every id attribute value of active elements is unique"",
+        ""help"": ""IDs of active elements must be unique"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/duplicate-id-active?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".bx--list-box__menu-item""
+        ],
+        ""summary"": ""Fix any of the following:\n  Document has active elements with the same id attribute: 0"",
+        ""source"": ""<div id=\""0\"" class=\""bx--list-box__menu-item\""><div class=\""bx--list-box__menu-item__option\"">Slack  </div></div>"",
+        ""tags"": [
+            ""cat.parsing"",
+            ""wcag2a"",
+            ""wcag411""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:17:32.338Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+9,Dialog,2,"[
+    {
+        ""ruleId"": ""reading-order-browse-outside-modal"",
+        ""description"": ""Screen readers can read content outside the modal dialog."",
+        ""help"": ""Able to browse outside modal with screen reader"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/reading-order-browse-outside-modal"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.bx--body--with-modal-open > div#sapper:nth-of-type(1) > div.container:nth-of-type(1) > div.container.svelte-zfy1o:nth-of-type(1) > div.cards.svelte-zfy1o:nth-of-type(1) > div.card.svelte-zfy1o:nth-of-type(9) > div.cardContent.svelte-zfy1o:nth-of-type(1) > div:nth-of-type(1) > div#ccs-0\\.bbix1qotlr.bx--modal.bx--modal-tall.bx--modal--danger.is-visible:nth-of-type(1) > div.bx--modal-container:nth-of-type(1)""
+        ],
+        ""summary"": ""Screen readers can read content outside the modal dialog."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""Carbon Components / dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:19:09.007Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""focus-modal-not-returned"",
+        ""description"": ""When the modal or similar element is closed, focus is not returned to the triggering element."",
+        ""help"": ""Modal is closed, focus is not returned to trigger"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/focus-modal-not-returned"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.bx--body--with-modal-open > div#sapper:nth-of-type(1) > div.container:nth-of-type(1) > div.container.svelte-zfy1o:nth-of-type(1) > div.cards.svelte-zfy1o:nth-of-type(1) > div.card.svelte-zfy1o:nth-of-type(9) > div.cardContent.svelte-zfy1o:nth-of-type(1) > div:nth-of-type(1) > div#ccs-0\\.bbix1qotlr.bx--modal.bx--modal-tall.bx--modal--danger.is-visible:nth-of-type(1) > div.bx--modal-container:nth-of-type(1)""
+        ],
+        ""summary"": ""When the modal or similar element is closed, focus is not returned to the triggering element."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""Carbon Components / dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:19:09.016Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+10,Disclosure,0,
+11,Feed,null,
+12,Link,null,
+13,Listbox,7,"[
+    {
+        ""ruleId"": ""aria-input-field-name"",
+        ""description"": ""Ensures every ARIA input field has an accessible name"",
+        ""help"": ""ARIA input fields must have an accessible name"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-input-field-name?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".bx--dropdown""
+        ],
+        ""summary"": ""Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"",
+        ""source"": ""<div role=\""listbox\"" tabindex=\""-1\"" id=\""ccs-0.dw69gie76ha\"" class=\""bx--dropdown false bx--dropdown--open bx--list-box bx--list-box--expanded\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:20:04.618Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-input-field-name"",
+        ""description"": ""Ensures every ARIA input field has an accessible name"",
+        ""help"": ""ARIA input fields must have an accessible name"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-input-field-name?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            ""#menu-ccs-0\\.dw69gie76ha""
+        ],
+        ""summary"": ""Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"",
+        ""source"": ""<div role=\""listbox\"" id=\""menu-ccs-0.dw69gie76ha\"" aria-labelledby=\""ccs-0.dw69gie76ha\"" class=\""bx--list-box__menu\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:20:04.618Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-children"",
+        ""description"": ""Ensures elements with an ARIA role that require child roles contain them"",
+        ""help"": ""Certain ARIA roles must contain particular children"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-required-children?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".bx--dropdown""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA child role not present: option"",
+        ""source"": ""<div role=\""listbox\"" tabindex=\""-1\"" id=\""ccs-0.dw69gie76ha\"" class=\""bx--dropdown false bx--dropdown--open bx--list-box bx--list-box--expanded\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:20:04.618Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-children"",
+        ""description"": ""Ensures elements with an ARIA role that require child roles contain them"",
+        ""help"": ""Certain ARIA roles must contain particular children"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-required-children?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            ""#menu-ccs-0\\.dw69gie76ha""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA child role not present: option"",
+        ""source"": ""<div role=\""listbox\"" id=\""menu-ccs-0.dw69gie76ha\"" aria-labelledby=\""ccs-0.dw69gie76ha\"" class=\""bx--list-box__menu\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:20:04.618Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""duplicate-id-active"",
+        ""description"": ""Ensures every id attribute value of active elements is unique"",
+        ""help"": ""IDs of active elements must be unique"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/duplicate-id-active?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".bx--list-box__menu-item--active""
+        ],
+        ""summary"": ""Fix any of the following:\n  Document has active elements with the same id attribute: 0"",
+        ""source"": ""<div id=\""0\"" class=\""bx--list-box__menu-item bx--list-box__menu-item--active bx--list-box__menu-item--highlighted\""><div class=\""bx--list-box__menu-item__option\"">Slack </div></div>"",
+        ""tags"": [
+            ""cat.parsing"",
+            ""wcag2a"",
+            ""wcag411""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:20:04.618Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""duplicate-id-active"",
+        ""description"": ""Ensures every id attribute value of active elements is unique"",
+        ""help"": ""IDs of active elements must be unique"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/duplicate-id-active?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".bx--list-box__menu-item:nth-child(2)""
+        ],
+        ""summary"": ""Fix any of the following:\n  Document has active elements with the same id attribute: 1"",
+        ""source"": ""<div id=\""1\"" class=\""bx--list-box__menu-item\""><div class=\""bx--list-box__menu-item__option\"">Email </div></div>"",
+        ""tags"": [
+            ""cat.parsing"",
+            ""wcag2a"",
+            ""wcag411""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:20:04.618Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""duplicate-id-aria"",
+        ""description"": ""Ensures every id attribute value used in ARIA and in labels is unique"",
+        ""help"": ""IDs used in ARIA and labels must be unique"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/duplicate-id-aria?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".bx--dropdown""
+        ],
+        ""summary"": ""Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: ccs-0.dw69gie76ha"",
+        ""source"": ""<div role=\""listbox\"" tabindex=\""-1\"" id=\""ccs-0.dw69gie76ha\"" class=\""bx--dropdown false bx--dropdown--open bx--list-box bx--list-box--expanded\"">"",
+        ""tags"": [
+            ""cat.parsing"",
+            ""wcag2a"",
+            ""wcag411""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:20:04.618Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+14,Menu,0,
+15,MenuButton,0,
+16,RadioGroup,0,
+17,Slider,1,"[
+    {
+        ""ruleId"": ""aria-input-field-name"",
+        ""description"": ""Ensures every ARIA input field has an accessible name"",
+        ""help"": ""ARIA input fields must have an accessible name"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-input-field-name?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            ""#ccs-0\\.fderu3iro9v""
+        ],
+        ""summary"": ""Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"",
+        ""source"": ""<div role=\""slider\"" tabindex=\""0\"" id=\""ccs-0.fderu3iro9v\"" aria-labelledby=\""label-ccs-0.fderu3iro9v\"" aria-valuemax=\""100\"" aria-valuemin=\""0\"" aria-valuenow=\""0\"" style=\""left: 0%;\"" class=\""bx--slider__thumb\""></div>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:21:30.795Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+18,MultiThumbSlider,null,
+19,Spinbutton,null,
+20,Table,null,
+21,Tabs,4,"[
+    {
+        ""ruleId"": ""aria-required-children"",
+        ""description"": ""Ensures elements with an ARIA role that require child roles contain them"",
+        ""help"": ""Certain ARIA roles must contain particular children"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-required-children?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            "".bx--tabs__nav""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA child role not present: tab"",
+        ""source"": ""<ul role=\""tablist\"" class=\""bx--tabs__nav bx--tabs__nav--hidden\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:22:42.791Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-parent"",
+        ""description"": ""Ensures elements with an ARIA role that require parent roles are contained by them"",
+        ""help"": ""Certain ARIA roles must be contained by particular parents"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-required-parent?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            ""#ccs-0\\.nz86z35kodi""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA parent role not present: tablist"",
+        ""source"": ""<a href=\""#\"" tabindex=\""0\"" aria-disabled=\""false\"" aria-selected=\""true\"" id=\""ccs-0.nz86z35kodi\"" role=\""tab\"" class=\""bx--tabs__nav-link\"">Tab label 1</a>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:22:42.791Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-parent"",
+        ""description"": ""Ensures elements with an ARIA role that require parent roles are contained by them"",
+        ""help"": ""Certain ARIA roles must be contained by particular parents"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-required-parent?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            ""#ccs-0\\.1dir3cja70m""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA parent role not present: tablist"",
+        ""source"": ""<a href=\""#\"" tabindex=\""0\"" aria-disabled=\""false\"" aria-selected=\""false\"" id=\""ccs-0.1dir3cja70m\"" role=\""tab\"" class=\""bx--tabs__nav-link\"">Tab label 2</a>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:22:42.791Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-required-parent"",
+        ""description"": ""Ensures elements with an ARIA role that require parent roles are contained by them"",
+        ""help"": ""Certain ARIA roles must be contained by particular parents"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-required-parent?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            ""#ccs-0\\.ed73ct4201g""
+        ],
+        ""summary"": ""Fix any of the following:\n  Required ARIA parent role not present: tablist"",
+        ""source"": ""<a href=\""#\"" tabindex=\""0\"" aria-disabled=\""false\"" aria-selected=\""false\"" id=\""ccs-0.ed73ct4201g\"" role=\""tab\"" class=\""bx--tabs__nav-link\"">Tab label 3</a>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag131""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:22:42.791Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+22,Toolbar,null,
+23,Tooltip,2,"[
+    {
+        ""ruleId"": ""aria-command-name"",
+        ""description"": ""Ensures every ARIA button, link and menuitem has an accessible name"",
+        ""help"": ""ARIA commands must have an accessible name"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-command-name?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".bx--tooltip__trigger""
+        ],
+        ""summary"": ""Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"",
+        ""source"": ""<div aria-describedby=\""ccs-0.k5jp7557y3\"" role=\""button\"" aria-haspopup=\""true\"" class=\""bx--tooltip__trigger\"" aria-expanded=\""false\"" tabindex=\""0\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:23:15.604Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-valid-attr-value"",
+        ""description"": ""Ensures all ARIA attributes have valid values"",
+        ""help"": ""ARIA attributes must conform to valid values"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr-value?application=AxeChrome"",
+        ""needsReview"": true,
+        ""isManual"": false,
+        ""selector"": [
+            "".bx--tooltip__trigger""
+        ],
+        ""summary"": ""Fix all of the following:\n  ARIA attribute element ID does not exist on the page: aria-describedby=\""ccs-0.k5jp7557y3\"""",
+        ""source"": ""<div aria-describedby=\""ccs-0.k5jp7557y3\"" role=\""button\"" aria-haspopup=\""true\"" class=\""bx--tooltip__trigger\"" aria-expanded=\""false\"" tabindex=\""0\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:23:15.604Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/carbon-components/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+24,TreeView,0,
+25,TreeGrid,null,
+26,WindowSplitter,null,

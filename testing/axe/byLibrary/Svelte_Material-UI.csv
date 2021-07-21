@@ -1,0 +1,146 @@
+#,Widget,Errors,Description
+1,Accordion,null,
+2,Alert,null,
+3,AlertDialog,2,"[
+    {
+        ""ruleId"": ""reading-order-browse-outside-modal"",
+        ""description"": ""Screen readers can read content outside the modal dialog."",
+        ""help"": ""Able to browse outside modal with screen reader"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/reading-order-browse-outside-modal"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.mdc-dialog-scroll-lock > div#sapper:nth-of-type(1) > div.container:nth-of-type(1) > div.container.svelte-zfy1o:nth-of-type(1) > div.cards.svelte-zfy1o:nth-of-type(1) > div.card.svelte-zfy1o:nth-of-type(3) > div.cardContent.svelte-zfy1o:nth-of-type(1) > div:nth-of-type(1) > div.mdc-dialog.mdc-dialog--fullscreen.mdc-dialog--open:nth-of-type(1) > div.mdc-dialog__scrim:nth-of-type(3)""
+        ],
+        ""summary"": ""Screen readers can read content outside the modal dialog."",
+        ""source"": ""<div class=\""mdc-dialog__scrim\""></div>"",
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""Material UI / svelte / alert dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:26:55.186Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/material-ui/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""focus-modal-moves-outside"",
+        ""description"": ""Focus is not maintained within the modal. It is possible to tab out of the modal."",
+        ""help"": ""Focus is not maintained in modal"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/focus-modal-moves-outside"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.mdc-dialog-scroll-lock > div#sapper:nth-of-type(1) > div.container:nth-of-type(1) > div.container.svelte-zfy1o:nth-of-type(1) > div.cards.svelte-zfy1o:nth-of-type(1) > div.card.svelte-zfy1o:nth-of-type(3) > div.cardContent.svelte-zfy1o:nth-of-type(1) > div:nth-of-type(1) > div.mdc-dialog.mdc-dialog--fullscreen.mdc-dialog--open:nth-of-type(1) > div.mdc-dialog__scrim:nth-of-type(3)""
+        ],
+        ""summary"": ""Focus is not maintained within the modal. It is possible to tab out of the modal."",
+        ""source"": ""<div class=\""mdc-dialog__scrim\""></div>"",
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""Material UI / svelte / alert dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:26:55.195Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/material-ui/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+4,Breadcrumbs,null,
+5,Button,0,
+6,Carousel,null,
+7,Checkbox,0,
+8,Combobox,null,
+9,Dialog,2,"[
+    {
+        ""ruleId"": ""reading-order-browse-outside-modal"",
+        ""description"": ""Screen readers can read content outside the modal dialog."",
+        ""help"": ""Able to browse outside modal with screen reader"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/reading-order-browse-outside-modal"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.mdc-dialog-scroll-lock > div#sapper:nth-of-type(1) > div.container:nth-of-type(1) > div.container.svelte-zfy1o:nth-of-type(1) > div.cards.svelte-zfy1o:nth-of-type(1) > div.card.svelte-zfy1o:nth-of-type(9) > div.cardContent.svelte-zfy1o:nth-of-type(1) > div:nth-of-type(1) > div.mdc-dialog.mdc-dialog--open:nth-of-type(1) > div.mdc-dialog__scrim:nth-of-type(3)""
+        ],
+        ""summary"": ""Screen readers can read content outside the modal dialog."",
+        ""source"": ""<div class=\""mdc-dialog__scrim\""></div>"",
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""Material UI / svelte / dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:29:03.416Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/material-ui/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""focus-modal-moves-outside"",
+        ""description"": ""Focus is not maintained within the modal. It is possible to tab out of the modal."",
+        ""help"": ""Focus is not maintained in modal"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/focus-modal-moves-outside"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.mdc-dialog-scroll-lock > div#sapper:nth-of-type(1) > div.container:nth-of-type(1) > div.container.svelte-zfy1o:nth-of-type(1) > div.cards.svelte-zfy1o:nth-of-type(1) > div.card.svelte-zfy1o:nth-of-type(9) > div.cardContent.svelte-zfy1o:nth-of-type(1) > div:nth-of-type(1) > div.mdc-dialog.mdc-dialog--open:nth-of-type(1) > div.mdc-dialog__scrim:nth-of-type(3)""
+        ],
+        ""summary"": ""Focus is not maintained within the modal. It is possible to tab out of the modal."",
+        ""source"": ""<div class=\""mdc-dialog__scrim\""></div>"",
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""Material UI / svelte / dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:29:03.423Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/material-ui/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+10,Disclosure,null,
+11,Feed,null,
+12,Link,null,
+13,Listbox,1,"[
+    {
+        ""ruleId"": ""aria-input-field-name"",
+        ""description"": ""Ensures every ARIA input field has an accessible name"",
+        ""help"": ""ARIA input fields must have an accessible name"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.3/aria-input-field-name?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            ""ul[role=\""listbox\""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"",
+        ""source"": ""<ul class=\""mdc-deprecated-list\"" role=\""listbox\"">"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-16T21:29:55.803Z"",
+        ""testUrl"": ""http://localhost:3000/svelte/material-ui/"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+14,Menu,0,
+15,MenuButton,0,
+16,RadioGroup,0,
+17,Slider,0,
+18,MultiThumbSlider,0,
+19,Spinbutton,null,
+20,Table,null,
+21,Tabs,0,
+22,Toolbar,0,
+23,Tooltip,0,
+24,TreeView,null,
+25,TreeGrid,null,
+26,WindowSplitter,null,

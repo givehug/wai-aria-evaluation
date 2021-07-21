@@ -1,0 +1,274 @@
+#,Widget,Errors,Description
+1,Accordion,0,
+2,Alert,0,
+3,AlertDialog,4,"[
+    {
+        ""ruleId"": ""reading-order-browse-outside-modal"",
+        ""description"": ""Screen readers can read content outside the modal dialog."",
+        ""help"": ""Able to browse outside modal with screen reader"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/reading-order-browse-outside-modal"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body > div:nth-of-type(3) > div:nth-of-type(1) > div.ant-popover.ant-popconfirm.ant-popover-placement-top:nth-of-type(1) > div.ant-popover-content:nth-of-type(1) > div.ant-popover-inner:nth-of-type(2) > div.ant-popover-inner-content:nth-of-type(1)""
+        ],
+        ""summary"": ""Screen readers can read content outside the modal dialog."",
+        ""source"": ""<div class=\""ant-popover-inner-content\"">"",
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""ReactJS / Ant Design / alert dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-14T08:53:49.611Z"",
+        ""testUrl"": ""http://localhost:3000/react/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""focus-modal-moves-outside"",
+        ""description"": ""Focus is not maintained within the modal. It is possible to tab out of the modal."",
+        ""help"": ""Focus is not maintained in modal"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/focus-modal-moves-outside"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body > div:nth-of-type(3) > div:nth-of-type(1) > div.ant-popover.ant-popconfirm.ant-popover-placement-top:nth-of-type(1) > div.ant-popover-content:nth-of-type(1) > div.ant-popover-inner:nth-of-type(2) > div.ant-popover-inner-content:nth-of-type(1)""
+        ],
+        ""summary"": ""Focus is not maintained within the modal. It is possible to tab out of the modal."",
+        ""source"": ""<div class=\""ant-popover-inner-content\"">"",
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""ReactJS / Ant Design / alert dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-14T08:53:49.620Z"",
+        ""testUrl"": ""http://localhost:3000/react/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""custom-dialog"",
+        ""description"": ""The element appears and functions like a modal dialog but is missing required ARIA role(s) and/or attribute(s)."",
+        ""help"": ""Dialog / Alert Dialog: Dialog is missing appropriate role and/or attributes"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/custom-dialog"",
+        ""impact"": ""critical"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body > div:nth-of-type(3) > div:nth-of-type(1) > div.ant-popover.ant-popconfirm.ant-popover-placement-top:nth-of-type(1) > div.ant-popover-content:nth-of-type(1) > div.ant-popover-inner:nth-of-type(2) > div.ant-popover-inner-content:nth-of-type(1)""
+        ],
+        ""summary"": ""The element appears and functions like a modal dialog but is missing required ARIA role(s) and/or attribute(s)."",
+        ""source"": ""<div class=\""ant-popover-inner-content\"">"",
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""ReactJS / Ant Design / alert dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-14T08:53:49.583Z"",
+        ""testUrl"": ""http://localhost:3000/react/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""focus-modal-none"",
+        ""description"": ""When the modal is activated, focus is not placed on the modal."",
+        ""help"": ""Focus is not placed on opened modal"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/focus-modal-none"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body > div:nth-of-type(3) > div:nth-of-type(1) > div.ant-popover.ant-popconfirm.ant-popover-placement-top:nth-of-type(1) > div.ant-popover-content:nth-of-type(1) > div.ant-popover-inner:nth-of-type(2) > div.ant-popover-inner-content:nth-of-type(1)""
+        ],
+        ""summary"": ""When the modal is activated, focus is not placed on the modal."",
+        ""source"": ""<div class=\""ant-popover-inner-content\"">"",
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": ""ReactJS / Ant Design / alert dialog"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-14T08:53:49.600Z"",
+        ""testUrl"": ""http://localhost:3000/react/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+4,Breadcrumbs,0,
+5,Button,0,
+6,Carousel,0,
+7,Checkbox,0,
+8,Combobox,1,"[
+    {
+        ""ruleId"": ""label"",
+        ""description"": ""Ensures every form element has a label"",
+        ""help"": ""Form elements must have labels"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/label?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            ""#rc_select_0""
+        ],
+        ""summary"": ""Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\""none\"" or role=\""presentation\"""",
+        ""source"": ""<input type=\""search\"" autocomplete=\""off\"" class=\""ant-select-selection-search-input\"" role=\""combobox\"" aria-haspopup=\""listbox\"" aria-owns=\""rc_select_0_list\"" aria-autocomplete=\""list\"" aria-controls=\""rc_select_0_list\"" aria-activedescendant=\""rc_select_0_list_0\"" value=\""df\"" id=\""rc_select_0\"" aria-expanded=\""false\"">"",
+        ""tags"": [
+            ""cat.forms"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""wcag131"",
+            ""section508"",
+            ""section508.22.n"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-14T09:04:23.685Z"",
+        ""testUrl"": ""http://localhost:3000/react/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+9,Dialog,1,"[
+    {
+        ""ruleId"": ""reading-order-browse-outside-modal"",
+        ""description"": ""Screen readers can read content outside the modal dialog."",
+        ""help"": ""Able to browse outside modal with screen reader"",
+        ""helpUrl"": ""https://axe.deque.com/rule-help/en/reading-order-browse-outside-modal"",
+        ""impact"": ""serious"",
+        ""needsReview"": false,
+        ""isManual"": true,
+        ""selector"": [
+            ""body.ant-scrolling-effect > div:nth-of-type(4) > div.ant-modal-root:nth-of-type(1) > div.ant-modal-wrap:nth-of-type(2)""
+        ],
+        ""summary"": ""Screen readers can read content outside the modal dialog."",
+        ""source"": null,
+        ""tags"": [
+            ""wcag2a""
+        ],
+        ""igt"": ""Modal Dialog"",
+        ""testName"": "" ReactJS / Ant Design / modal"",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-14T09:06:01.381Z"",
+        ""testUrl"": ""http://localhost:3000/react/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+10,Disclosure,0,
+11,Feed,null,
+12,Link,null,
+13,Listbox,1,"[
+    {
+        ""ruleId"": ""label"",
+        ""description"": ""Ensures every form element has a label"",
+        ""help"": ""Form elements must have labels"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/label?application=AxeChrome"",
+        ""impact"": ""critical"",
+        ""isManual"": false,
+        ""selector"": [
+            ""#rc_select_1""
+        ],
+        ""summary"": ""Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\""none\"" or role=\""presentation\"""",
+        ""source"": ""<input type=\""search\"" autocomplete=\""off\"" class=\""ant-select-selection-search-input\"" style=\""opacity:0\"" role=\""combobox\"" aria-haspopup=\""listbox\"" aria-owns=\""rc_select_1_list\"" aria-autocomplete=\""list\"" aria-controls=\""rc_select_1_list\"" aria-activedescendant=\""rc_select_1_list_1\"" value=\""\"" readonly=\""\"" unselectable=\""on\"" id=\""rc_select_1\"" aria-expanded=\""false\"">"",
+        ""tags"": [
+            ""cat.forms"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""wcag131"",
+            ""section508"",
+            ""section508.22.n"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-14T09:07:22.806Z"",
+        ""testUrl"": ""http://localhost:3000/react/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+14,Menu,0,
+15,MenuButton,0,
+16,RadioGroup,0,
+17,Slider,1,"[
+    {
+        ""ruleId"": ""aria-input-field-name"",
+        ""description"": ""Ensures every ARIA input field has an accessible name"",
+        ""help"": ""ARIA input fields must have an accessible name"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-input-field-name?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".Widgets_card__34m9H:nth-child(17) > .Widgets_cardContent__23fMe > .ant-slider > .ant-slider-handle[role=\""slider\""][aria-valuemin=\""\\30 \""]""
+        ],
+        ""summary"": ""Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"",
+        ""source"": ""<div tabindex=\""0\"" class=\""ant-slider-handle\"" style=\""left:30%;right:auto;transform:translateX(-50%)\"" role=\""slider\"" aria-valuemin=\""0\"" aria-valuemax=\""100\"" aria-valuenow=\""30\"" aria-disabled=\""false\""></div>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-14T09:08:50.464Z"",
+        ""testUrl"": ""http://localhost:3000/react/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+18,MultiThumbSlider,2,"[
+    {
+        ""ruleId"": ""aria-input-field-name"",
+        ""description"": ""Ensures every ARIA input field has an accessible name"",
+        ""help"": ""ARIA input fields must have an accessible name"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-input-field-name?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-slider-handle-1""
+        ],
+        ""summary"": ""Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"",
+        ""source"": ""<div tabindex=\""0\"" class=\""ant-slider-handle ant-slider-handle-1\"" style=\""left:20%;right:auto;transform:translateX(-50%)\"" role=\""slider\"" aria-valuemin=\""0\"" aria-valuemax=\""100\"" aria-valuenow=\""20\"" aria-disabled=\""false\""></div>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-14T09:09:34.989Z"",
+        ""testUrl"": ""http://localhost:3000/react/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    },
+    {
+        ""ruleId"": ""aria-input-field-name"",
+        ""description"": ""Ensures every ARIA input field has an accessible name"",
+        ""help"": ""ARIA input fields must have an accessible name"",
+        ""helpUrl"": ""https://dequeuniversity.com/rules/axe/4.2/aria-input-field-name?application=AxeChrome"",
+        ""impact"": ""serious"",
+        ""isManual"": false,
+        ""selector"": [
+            "".ant-slider-handle-2""
+        ],
+        ""summary"": ""Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"",
+        ""source"": ""<div tabindex=\""0\"" class=\""ant-slider-handle ant-slider-handle-2\"" style=\""left:50%;right:auto;transform:translateX(-50%)\"" role=\""slider\"" aria-valuemin=\""0\"" aria-valuemax=\""100\"" aria-valuenow=\""50\"" aria-disabled=\""false\""></div>"",
+        ""tags"": [
+            ""cat.aria"",
+            ""wcag2a"",
+            ""wcag412"",
+            ""ACT""
+        ],
+        ""igt"": """",
+        ""shareURL"": """",
+        ""createdAt"": ""2021-07-14T09:09:34.989Z"",
+        ""testUrl"": ""http://localhost:3000/react/ant-design"",
+        ""foundBy"": ""vboretskyi@gmail.com""
+    }
+]"
+19,Spinbutton,0,
+20,Table,null,
+21,Tabs,0,
+22,Toolbar,null,
+23,Tooltip,0,
+24,TreeView,0,
+25,TreeGrid,null,
+26,WindowSplitter,null,

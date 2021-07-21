@@ -4,9 +4,9 @@ from pandas.core.indexes.base import Index
 precision_2 = '{:,.2f}'
 
 
-def main():
+def manual():
     df = pd.read_csv(
-        "../testing/manual/output/onlyNumbers.csv",
+        "../testing/manual/output/checklistResults.csv",
         header=0,
         encoding='utf-8',
         index_col=0,
@@ -125,4 +125,4 @@ def to_int(index):
     return closure
 
 
-main()
+manual()

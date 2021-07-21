@@ -1,0 +1,54 @@
+#,Widget,ErrorCount,Test output
+1,Accordion,0,
+2,Alert,0,
+3,AlertDialog,null,
+4,Breadcrumbs,0,
+5,Button,0,
+6,Carousel,0,
+7,Checkbox,0,
+8,Combobox,null,
+9,Dialog,2,"[
+  {
+    ""errorCode"": ""visibleModalSiblings"",
+    ""domElement"": ""<div role=\""dialog\"" aria-modal=\""true\"" class=\""fade modal show\"" tabindex=\""-1\"" style=\""display: block;\""></div>"",
+    ""errorDescription"": ""Error: content behind the modal can be read by screen readers"",
+    ""recommendation"": ""Recommend: add aria-hidden='true' to the contents behind the modal""
+  },
+  {
+    ""errorCode"": ""noModalTitle"",
+    ""domElement"": ""<div role=\""dialog\"" aria-modal=\""true\"" class=\""fade modal show\"" tabindex=\""-1\"" style=\""display: block;\""></div>"",
+    ""errorDescription"": ""Error: the modal does not have a title"",
+    ""recommendation"": ""Recommend: reference the title of the modal with aria-labelledby""
+  }
+]"
+10,Disclosure,0,
+11,Feed,null,
+12,Link,null,
+13,Listbox,1,"[
+  {
+    ""errorCode"": ""ariaLabelledbyOnNonInteractiveElement"",
+    ""domElement"": ""<div x-placement=\""bottom-start\"" aria-labelledby=\""dropdown-basic\"" class=\""dropdown-menu show\"" style=\""position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 40px, 0px);\"" data-popper-reference-hidden=\""false\"" data-popper-escaped=\""false\"" data-popper-placement=\""bottom-start\""></div>"",
+    ""errorDescription"": ""Error: aria-labelledby is used on an element which does not allow this attribute"",
+    ""recommendation"": ""Recommend: Remove aria-labelledby attribute, and use visually hidden text instead""
+  }
+]"
+14,Menu,0,
+15,MenuButton,0,
+16,RadioGroup,0,
+17,Slider,0,
+18,MultiThumbSlider,null,
+19,Spinbutton,null,
+20,Table,null,
+21,Tabs,0,
+22,Toolbar,1,"[
+  {
+    ""errorCode"": ""placeholderUsedForLabel"",
+    ""domElement"": ""<input type=\""text\"" placeholder=\""Search\"" class=\""mr-sm-2 form-control\"">"",
+    ""errorDescription"": ""Error: placeholder used for label"",
+    ""recommendation"": ""Recommend: use a labelling technique other than placeholder text""
+  }
+]"
+23,Tooltip,0,
+24,TreeView,null,
+25,TreeGrid,null,
+26,WindowSplitter,null,

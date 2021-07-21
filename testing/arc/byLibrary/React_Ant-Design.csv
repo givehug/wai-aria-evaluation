@@ -1,0 +1,116 @@
+#,Widget,ErrorCount,Test output
+1,Accordion,3,"[
+  {
+    ""errorCode"": ""ariaExpandedOnInvalidRole"",
+    ""domElement"": ""<div class=\""ant-collapse-header\"" role=\""tab\"" tabindex=\""0\"" aria-expanded=\""true\"">This is panel header 1</div>"",
+    ""errorDescription"": ""Error: aria-expanded is on an element where it will not be conveyed to screen reader users"",
+    ""recommendation"": ""Recommend: aria-expanded should be placed on the element which controls the visibility of another element""
+  },
+  {
+    ""errorCode"": ""ariaExpandedOnInvalidRole"",
+    ""domElement"": ""<div class=\""ant-collapse-header\"" role=\""tab\"" tabindex=\""0\"" aria-expanded=\""false\"">This is panel header 2</div>"",
+    ""errorDescription"": ""Error: aria-expanded is on an element where it will not be conveyed to screen reader users"",
+    ""recommendation"": ""Recommend: aria-expanded should be placed on the element which controls the visibility of another element""
+  },
+  {
+    ""errorCode"": ""ariaExpandedOnInvalidRole"",
+    ""domElement"": ""<div class=\""ant-collapse-header\"" role=\""tab\"" tabindex=\""0\"" aria-expanded=\""false\"">This is panel header 3</div>"",
+    ""errorDescription"": ""Error: aria-expanded is on an element where it will not be conveyed to screen reader users"",
+    ""recommendation"": ""Recommend: aria-expanded should be placed on the element which controls the visibility of another element""
+  }
+]"
+2,Alert,0,
+3,AlertDialog,0,
+4,Breadcrumbs,0,
+5,Button,0,
+6,Carousel,0,
+7,Checkbox,0,
+8,Combobox,1,"[
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<input type=\""search\"" autocomplete=\""off\"" class=\""ant-select-selection-search-input\"" role=\""combobox\"" aria-haspopup=\""listbox\"" aria-owns=\""rc_select_0_list\"" aria-autocomplete=\""list\"" aria-controls=\""rc_select_0_list\"" aria-activedescendant=\""rc_select_0_list_-1\"" value=\""1231233\"" id=\""rc_select_0\"" aria-expanded=\""false\"">"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  }
+]"
+9,Dialog,5,"[
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<div tabindex=\""0\"" aria-hidden=\""true\"" style=\""width: 0px; height: 0px; overflow: hidden; outline: none;\""></div>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  },
+  {
+    ""errorCode"": ""nonActiveElementInTabOrder"",
+    ""domElement"": ""<div tabindex=\""0\"" aria-hidden=\""true\"" style=\""width: 0px; height: 0px; overflow: hidden; outline: none;\""></div>"",
+    ""errorDescription"": ""Error: tabindex is used on a non-interactive component in a way that puts it in the tab order. Only active element should be in the tab order"",
+    ""recommendation"": ""Recommend: Remove the tabindex attribute or set it to '-1', OR define the role of the control.""
+  },
+  {
+    ""errorCode"": ""visibleModalSiblings"",
+    ""domElement"": ""<div tabindex=\""-1\"" class=\""ant-modal-wrap\"" role=\""dialog\"" aria-labelledby=\""rcDialogTitle0\""></div>"",
+    ""errorDescription"": ""Error: content behind the modal can be read by screen readers"",
+    ""recommendation"": ""Recommend: add aria-hidden='true' to the contents behind the modal""
+  },
+  {
+    ""errorCode"": ""Error: aria-hidden='true' set on focusable item"",
+    ""domElement"": ""<div tabindex=\""0\"" aria-hidden=\""true\"" style=\""width: 0px; height: 0px; overflow: hidden; outline: none;\"" class=\""\""></div>"",
+    ""errorDescription"": ""WCAG 2.1 Success Criterion 2.1.1 Keyboard (A)""
+  },
+  {
+    ""errorCode"": ""Error: aria-hidden='true' set on focusable item"",
+    ""domElement"": ""<div tabindex=\""0\"" aria-hidden=\""true\"" style=\""width: 0px; height: 0px; overflow: hidden; outline: none;\"" class=\""\""></div>"",
+    ""errorDescription"": ""WCAG 2.1 Success Criterion 2.1.1 Keyboard (A)""
+  }
+]"
+10,Disclosure,0,
+11,Feed,null,
+12,Link,null,
+13,Listbox,1,"[
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<input type=\""search\"" autocomplete=\""off\"" class=\""ant-select-selection-search-input\"" style=\""opacity:0\"" role=\""combobox\"" aria-haspopup=\""listbox\"" aria-owns=\""rc_select_1_list\"" aria-autocomplete=\""list\"" aria-controls=\""rc_select_1_list\"" aria-activedescendant=\""rc_select_1_list_1\"" value=\""\"" readonly=\""\"" unselectable=\""on\"" id=\""rc_select_1\"" aria-expanded=\""false\"">"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  }
+]"
+14,Menu,0,
+15,MenuButton,0,
+16,RadioGroup,0,
+17,Slider,1,"[
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<div tabindex=\""0\"" class=\""ant-slider-handle\"" style=\""left:30%;right:auto;transform:translateX(-50%)\"" role=\""slider\"" aria-valuemin=\""0\"" aria-valuemax=\""100\"" aria-valuenow=\""30\"" aria-disabled=\""false\""></div>"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  }
+]"
+18,MultiThumbSlider,2,"[
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<div tabindex=\""0\"" class=\""ant-slider-handle ant-slider-handle-1\"" style=\""left:20%;right:auto;transform:translateX(-50%)\"" role=\""slider\"" aria-valuemin=\""0\"" aria-valuemax=\""100\"" aria-valuenow=\""20\"" aria-disabled=\""false\""></div>"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  },
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<div tabindex=\""0\"" class=\""ant-slider-handle ant-slider-handle-2\"" style=\""left:50%;right:auto;transform:translateX(-50%)\"" role=\""slider\"" aria-valuemin=\""0\"" aria-valuemax=\""100\"" aria-valuenow=\""50\"" aria-disabled=\""false\""></div>"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  }
+]"
+19,Spinbutton,0,
+20,Table,null,
+21,Tabs,0,
+22,Toolbar,null,
+23,Tooltip,0,
+24,TreeView,1,"[
+  {
+    ""errorCode"": ""inputNoAccessibleName"",
+    ""domElement"": ""<input style=\""width:0;height:0;display:flex;overflow:hidden;opacity:0;border:0;padding:0;margin:0\"" tabindex=\""0\"" value=\""\"">"",
+    ""errorDescription"": ""Error: no accessible name"",
+    ""recommendation"": ""Recommend: provide a label for the input element""
+  }
+]"
+25,TreeGrid,null,
+26,WindowSplitter,null,
