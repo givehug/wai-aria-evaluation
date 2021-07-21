@@ -1,4 +1,4 @@
-#,Widget,ErrorCount,Test output
+#,Widget,ErrorCount,Output
 1,Accordion,3,"[
   {
     ""errorCode"": ""ariaExpandedOnInvalidRole"",

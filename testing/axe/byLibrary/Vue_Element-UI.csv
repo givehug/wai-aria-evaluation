@@ -1,4 +1,4 @@
-#,Widget,Errors,Description
+#,Widget,ErrorCount,Output
 1,Accordion,6,"[
     {
         ""ruleId"": ""nested-interactive"",

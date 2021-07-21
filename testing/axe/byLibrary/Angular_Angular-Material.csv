@@ -1,4 +1,4 @@
-#,Widget,Errors,Description
+#,Widget,ErrorCount,Output
 1,Accordion,0,
 2,Alert,null,
 3,AlertDialog,1,"[
