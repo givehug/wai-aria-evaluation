@@ -116,6 +116,28 @@ def manual():
     write_csv(total_success_mean,
               "./out/manual/MeanSuccessRatioByLibrary.csv")
 
+    react_success_rate = total_success_mean.iloc[0:6]
+    mean_react_success_rate = react_success_rate.mean().map(map_round_2)
+
+    vue_success_rate = total_success_mean.iloc[6:10]
+    mean_vue_success_rate = vue_success_rate.mean().map(map_round_2)
+
+    angular_success_rate = total_success_mean.iloc[10:12]
+    mean_angular_success_rate = angular_success_rate.mean().map(map_round_2)
+
+    svelte_success_rate = total_success_mean.iloc[12:14]
+    mean_svelte_success_rate = svelte_success_rate.mean().map(map_round_2)
+
+    framework_success_rate = pd.concat([
+        mean_react_success_rate,
+        mean_vue_success_rate,
+        mean_angular_success_rate,
+        mean_svelte_success_rate,
+    ], axis=1, ignore_index=True)
+    framework_success_rate = framework_success_rate.rename(
+        columns={0: 'React', 1: 'Vue', 2: 'Angular', 3: 'Svelte'})
+    write_csv(framework_success_rate, "./out/manual/FrameworkSuccessRate.csv")
+
     # mean widget success ratio
     mean_keyboard_success_by_widget = df.T.applymap(
         map_success_ratio("keyboard")).mean(axis=0).map(map_round_2)
