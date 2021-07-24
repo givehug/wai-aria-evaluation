@@ -54,7 +54,11 @@ def map_round_2(x):
 def manual():
     def concat_keyboard_aria(df_aria, df_key):
         x = pd.concat([df_aria, df_key], axis=1, ignore_index=True)
-        x = x.rename(columns={0: 'Keyboard', 1: 'ARIA'})
+        mean = x.mean(axis=1).map(map_round_2)
+        sum = x.sum(axis=1).map(map_round_2)
+        x = pd.concat([x, mean, sum], axis=1, ignore_index=True)
+        x = x.rename(
+            columns={0: 'Keyboard', 1: 'ARIA', 2: 'Average', 3: 'Sum'})
         return x
 
     df = pd.read_csv(
@@ -84,6 +88,21 @@ def manual():
     write_csv(keyboard_errors, "./out/manual/ErrorsKeyboard.csv")
     aria_errors = df.applymap(map_error_count("aria"))
     write_csv(aria_errors, "./out/manual/ErrorsAria.csv")
+
+    # mean errors per widget
+    mean_widget_keyboard_errors = keyboard_errors.mean(axis=1).map(map_round_2)
+    mean_widget_aria_errors = aria_errors.mean(axis=1).map(map_round_2)
+    mean_widget_errors = concat_keyboard_aria(
+        mean_widget_keyboard_errors,
+        mean_widget_aria_errors,
+    )
+    write_csv(
+        mean_widget_errors, "./out/manual/MeanErrorsByWidget.csv")
+
+    # number of implemented widgets by lib
+    widget_count_by_lib = aria_errors.count()
+    write_csv_no_header(widget_count_by_lib,
+                        "./out/manual/WidgetCountByLib.csv")
 
     # mean widget errors by lib
     mean_keyboard_errors = keyboard_errors.mean(axis=0).map(map_round_2)
@@ -191,11 +210,13 @@ def automated():
     arc_total_errors_by_lib = arc_df.sum()
     arc_total_errors = arc_total_errors_by_lib.sum()
     arc_mean_error_by_widget = arc_df.mean(axis=1).map(map_round_2)
+    write_csv(arc_df, "./out/auto/AutoArcErrors.csv")
 
     # axe
     axe_total_errors_by_lib = axe_df.sum()
     axe_total_errors = axe_total_errors_by_lib.sum()
     axe_mean_error_by_widget = axe_df.mean(axis=1).map(map_round_2)
+    write_csv(axe_df, "./out/auto/AutoAxeErrors.csv")
 
     # total
     automated_df = arc_df.add(axe_df, fill_value=0).applymap(
@@ -209,21 +230,21 @@ def automated():
         [axe_total_errors_by_lib, arc_total_errors_by_lib, automated_errors_by_lib], axis=1, ignore_index=True)
     out_totals_by_libs = out_totals_by_libs.rename(
         columns={0: 'AXE', 1: 'ARC', 2: 'Average'})
-    write_csv(out_totals_by_libs, "./out/auto/TotalErrorsByLibrary.csv")
+    write_csv(out_totals_by_libs, "./out/auto/AutoTotalErrorsByLibrary.csv")
 
     # total mean errors by widget
     out_totals_by_widget = pd.concat(
         [axe_mean_error_by_widget, arc_mean_error_by_widget, automated_mean_error_by_widget], axis=1, ignore_index=True)
     out_totals_by_widget = out_totals_by_widget.rename(
         columns={0: 'AXE', 1: 'ARC', 2: 'Average'})
-    write_csv(out_totals_by_widget, "./out/auto/TotalMeanErrorsByWidget.csv")
+    write_csv(out_totals_by_widget, "./out/auto/AutoMeanErrorsByWidget.csv")
 
     # mean error count
     average_errors_by_lib = out_totals_by_libs.mean(axis=0)
     average_errors_by_widget = out_totals_by_widget.mean(axis=0)
 
     # totals
-    with open('./out/auto/Totals.txt', 'w') as file:
+    with open('./out/auto/AutoTotals.txt', 'w') as file:
         file.write("ARC total errors detected:               " +
                    str(int(arc_total_errors)) + "\n")
         file.write("AXE total errors detected:               " +
