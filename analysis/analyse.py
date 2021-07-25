@@ -15,9 +15,26 @@ def map_success_ratio(category):
         if not isinstance(x, str):
             return x
         split = x.split("/")
-        indexes = [0, 1] if category == 'keyboard' else [2, 3]
-        checks = int(split[indexes[0]])
-        passed = int(split[indexes[1]])
+
+        keyboard_indexes = [0, 1]
+        aria_indexes = [2, 3]
+        checks = 0
+        passed = 0
+        keyboard_checks = int(split[keyboard_indexes[0]])
+        keyboard_passed = int(split[keyboard_indexes[1]])
+        aria_checks = int(split[aria_indexes[0]])
+        aria_passed = int(split[aria_indexes[1]])
+
+        if category == "keyboard":
+            checks = keyboard_checks
+            passed = keyboard_passed
+        if category == "aria":
+            checks = aria_checks
+            passed = aria_passed
+        if category == "total":
+            checks = aria_checks + keyboard_checks
+            passed = aria_passed + keyboard_passed
+
         if checks == 0:
             return 1
         if passed == 0:
@@ -82,6 +99,8 @@ def manual():
     write_csv(keyboard_success, "./out/manual/SuccessRatioKeyboard.csv")
     aria_success = df.applymap(map_success_ratio("aria"))
     write_csv(aria_success, "./out/manual/SuccessRatioAria.csv")
+    average_success = df.applymap(map_success_ratio("total"))
+    write_csv(average_success, "./out/manual/SuccessRatio.csv")
 
     # errors found lib/widget
     keyboard_errors = df.applymap(map_error_count("keyboard"))
