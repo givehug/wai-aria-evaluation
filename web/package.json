@@ -12,8 +12,13 @@
     "build:angular": "cd angular && npm run build:static && mv dist/static ../server/build/angular && cd ../",
     "build:svelte": "cd svelte && npm run build && npm run export && mv __sapper__/export/svelte ../server/build/svelte && cd ../",
     "build-exe": "cd server && npx pkg . && cd ../",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run install && npm run build"
   },
   "author": "Volodymyr Boretskyi",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+		"node": "16.0.0",
+		"npm": "7.10.0"
+	}
 }
