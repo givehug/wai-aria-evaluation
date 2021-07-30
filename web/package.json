@@ -4,7 +4,7 @@
   "description": "wai-aria evaluation source code",
   "main": "index.js",
   "scripts": {
-    "install": "cd server && npm i && cd ../react && npm i && cd ../vue && npm i && cd ../angular && npm i && cd ../ && cd ../svelte && npm i && cd ../",
+    "install": "cd server && npm i && cd ../react && npm i && cd ../vue && npm i && cd ../angular && npm i && cd ../svelte && npm i && cd ../",
     "cleanup": "cd server && rm -rf build && mkdir build && cd ../",
     "build": "npm run cleanup && npm run build:react && npm run build:vue && npm run build:angular && npm run build:svelte",
     "build:react": "cd react && npm run build-static && mv out ../server/build/react && cd ../",
