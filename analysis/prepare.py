@@ -1,6 +1,13 @@
 import pandas as pd
 from pandas.core.indexes.base import Index
 import glob
+from shutil import copyfile
+import pathlib
+
+# create input and output dirs if not exist for safety
+pathlib.Path('./in').mkdir(parents=True, exist_ok=True)
+pathlib.Path('./out/auto').mkdir(parents=True, exist_ok=True)
+pathlib.Path('./out/manual').mkdir(parents=True, exist_ok=True)
 
 
 def merge_files(in_path, out_path):
@@ -19,12 +26,13 @@ def merge_files(in_path, out_path):
 
 
 def merge_arc_files():
-    merge_files("../testing/arc/byLibrary/*", "../testing/arc/errors.csv")
+    merge_files("../testing/arc/byLibrary/*", "./in/arcErrors.csv")
 
 
 def merge_axe_files():
-    merge_files("../testing/axe/byLibrary/*", "../testing/axe/errors.csv")
+    merge_files("../testing/axe/byLibrary/*", "./in/axeErrors.csv")
 
 
 merge_arc_files()
 merge_axe_files()
+copyfile("../testing/manual/errors.csv", "./in/manualErrors.csv")

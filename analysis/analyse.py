@@ -79,7 +79,7 @@ def manual():
         return x
 
     df = pd.read_csv(
-        "../testing/manual/errors.csv",
+        "./in/manualErrors.csv",
         header=0,
         encoding='utf-8',
         index_col=0,
@@ -221,9 +221,9 @@ def manual():
 
 
 def automated():
-    arc_df = pd.read_csv("../testing/arc/errors.csv",
+    arc_df = pd.read_csv("./in/arcErrors.csv",
                          encoding='utf-8', index_col=0)
-    axe_df = pd.read_csv("../testing/axe/errors.csv",
+    axe_df = pd.read_csv("./in/axeErrors.csv",
                          encoding='utf-8', index_col=0)
     # arc
     arc_total_errors_by_lib = arc_df.sum()
