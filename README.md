@@ -1,6 +1,4 @@
-## Evaluation of Accessibility of Web UI Component Libraries and Conformance to WAI-ARIA Authoring Practices 1.1.
-
-The source code with all artefacts can be found on the public GitHub repository https://github.com/givehug/wai-aria-evaluation.
+## WAI-ARIA evaluation
 
 ### Web
 
@@ -21,3 +19,7 @@ The source code with all artefacts can be found on the public GitHub repository 
 - `analysis` dir contains `prepare.py` and `analyse.py` the perform initial data preparation and statistical analysis
 - the output can be found in `analysis/out` directory
 - manually aggregated spreadsheets with chart, visualisations, and tables can be found in `analysis/spreadsheets` directory
+
+### Ethics
+
+- `ethics` dir contains a self-assessed ethics quiz
